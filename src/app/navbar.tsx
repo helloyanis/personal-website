@@ -1,9 +1,9 @@
-// src/app/navbar.tsx
+"use client"
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("nav");
   return (
     <nav className="p-4">
       <ul className="flex space-x-4">
