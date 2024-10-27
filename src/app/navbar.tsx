@@ -1,23 +1,25 @@
 // src/app/navbar.tsx
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
+  const { t } = useTranslation();
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="p-4">
       <ul className="flex space-x-4">
         <li>
           <Link href="/">
-            <a className="text-white">Home</a>
+            {t("home")}
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a className="text-white">About</a>
+            About
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a className="text-white">Contact</a>
+            Contact
           </Link>
         </li>
       </ul>
