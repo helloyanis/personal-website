@@ -27,6 +27,19 @@ nav {
   color: var(--foreground);
 }
 
+.card {
+  background: var(--background-secondary);
+  color: var(--foreground);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
