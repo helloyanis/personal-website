@@ -29,7 +29,6 @@ export default function Card({ children }: CardProps) {
             <div className="card">
                 <Skeleton width={100} height={24} />
             </div>
-            
         );
     }
 }

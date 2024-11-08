@@ -16,11 +16,11 @@ export default function Navbar() {
 
   return (
     <nav className="p-4">
-      <ul className="flex space-x-4">
+      <ul className="flex space-x-4 text-center justify-center">
         <li>
           {isReady ? (
-            <Link href="/" shallow>
-              {"🏠 "+t("home")}
+            <Link href="/" className="nav-link" shallow>
+              {"🏠"}<br/>{t("home")}
             </Link>
           ) : (
             <Skeleton width={100} height={24} />
@@ -28,8 +28,8 @@ export default function Navbar() {
         </li>
         <li>
           {isReady ? (
-            <Link href="/about" shallow>
-              {"ℹ️ "+t("about")}
+            <Link href="/about" className="nav-link" shallow>
+              {"ℹ️"}<br/>{t("about")}
             </Link>
           ) : (
             <Skeleton width={100} height={24} />
@@ -37,8 +37,8 @@ export default function Navbar() {
         </li>
         <li>
           {isReady ? (
-            <Link href="/contact" shallow>
-              {"💬 "+t("contact")}
+            <Link href="/contact" className="nav-link" shallow>
+              {"💬"}<br/>{t("contact")}
             </Link>
           ) : (
             <Skeleton width={100} height={24} />
@@ -46,8 +46,8 @@ export default function Navbar() {
         </li>
         <li>
           {isReady ? (
-            <Link href="/funzone" shallow>
-              {"🕹️ "+t("funzone")}
+            <Link href="/funzone" className="nav-link" shallow>
+              {"🕹️"}<br/>{t("funzone")}
             </Link>
           ) : (
             <Skeleton width={100} height={24} />
