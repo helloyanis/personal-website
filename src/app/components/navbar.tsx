@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import Skeleton from '@mui/material/Skeleton';
+import { Skeleton } from '@mui/material';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation("nav");

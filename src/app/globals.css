@@ -6,6 +6,7 @@
   --background: #ffffff;
   --background-secondary: #dcdcdc;
   --foreground: #171717;
+  white-space: pre-line;
 }
 
 @media (prefers-color-scheme: dark) {

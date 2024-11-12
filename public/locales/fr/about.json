@@ -1,4 +1,7 @@
 {
     "aboutSiteTitle": "À propos du site",
+    "aboutSiteContent1": "Attention, ca va être un peu technique!\nCe site est créé en React avec Next.js et i18next. Vous pouvez voir le code source sur GitHub!",
+    "sourceCode": "Allons-y!",
+    "aboutSiteContent2": "Le site est hébergé sur Vercel, et est disponible en français et en anglais en fonction des paramètres de votre navigateur\nVous avez peut-être remarqué que l'URL est étrange, c'est car le nom de domaine est en punycode! Concrètement, vous pouver taper https://🦊✨💻.ws et vous arriverez ici! Merci à Porkbun qui permet d'avoir des domaines en punycode pour pas très cher! (Ce n'est pas sponsorisé mais ils sont cool!)",
     "aboutMeTitle": "À propos de moi"
 }
