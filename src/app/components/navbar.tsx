@@ -17,42 +17,50 @@ export default function Navbar() {
   return (
     <nav className="p-4">
       <ul className="flex space-x-4 text-center justify-center">
-        <li>
-          {isReady ? (
-            <Link href="/" className="nav-link" shallow>
-              {"🏠"}<br/>{t("home")}
-            </Link>
-          ) : (
-            <Skeleton width={100} height={24} />
-          )}
-        </li>
-        <li>
-          {isReady ? (
-            <Link href="/about" className="nav-link" shallow>
-              {"ℹ️"}<br/>{t("about")}
-            </Link>
-          ) : (
-            <Skeleton width={100} height={24} />
-          )}
-        </li>
-        <li>
-          {isReady ? (
-            <Link href="/contact" className="nav-link" shallow>
-              {"💬"}<br/>{t("contact")}
-            </Link>
-          ) : (
-            <Skeleton width={100} height={24} />
-          )}
-        </li>
-        <li>
-          {isReady ? (
-            <Link href="/funzone" className="nav-link" shallow>
-              {"🕹️"}<br/>{t("funzone")}
-            </Link>
-          ) : (
-            <Skeleton width={100} height={24} />
-          )}
-        </li>
+        <Link href="/" className="nav-link" shallow>
+          <li>
+            {isReady ? (
+              
+                <span>{"🏠"}<br/>{t("home")}</span>
+              
+            ) : (
+              <Skeleton width={100} height={24} />
+            )}
+          </li>
+        </Link>
+        <Link href="/about" className="nav-link" shallow>
+          <li>
+            {isReady ? (
+              
+                <span>{"ℹ️"}<br/>{t("about")}</span>
+              
+            ) : (
+              <Skeleton width={100} height={24} />
+            )}
+          </li>
+        </Link>
+        <Link href="/contact" className="nav-link" shallow>
+          <li>
+            {isReady ? (
+              
+                <span>{"💬"}<br/>{t("contact")}</span>
+              
+            ) : (
+              <Skeleton width={100} height={24} />
+            )}
+          </li>
+        </Link>
+        <Link href="/funzone" className="nav-link" shallow>
+          <li>
+            {isReady ? (
+              
+                <span>{"🕹️"}<br/>{t("funzone")}</span>
+              
+            ) : (
+              <Skeleton width={100} height={24} />
+            )}
+          </li>
+        </Link>
       </ul>
     </nav>
   );
