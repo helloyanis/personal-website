@@ -28,7 +28,7 @@ export default function Page() {
                     href="https://github.com/helloyanis/helloyanis.github.io"
                     startIcon={
                         <img
-                            src="/assets/icons/github-mark-white.svg"
+                            src="/assets/icons/github.svg"
                             alt="GitHub icon" 
                             className="icon-dark-mode w-6 h-6"
                         />
@@ -80,17 +80,28 @@ export default function Page() {
                         </Link>
                         <img className="m-1" src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=fff" alt="Windows"/>
                         <img className="m-1" src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff" alt="Android"/>
-                        <img className="m-1" src="https://img.shields.io/badge/Firefox-FF7139?logo=firefox-browser&logoColor=fff" alt="Firefox"/>
-                        
+                        <Link href="https://addons.mozilla.org/user/17521637/" passHref>
+                            <img className="m-1" src="https://img.shields.io/badge/Firefox-FF7139?logo=firefox-browser&logoColor=fff" alt="Firefox"/>
+                        </Link>
                     </div>
                     <p className="text-center font-bold">
                         {t("miscBadges")}
                     </p>
                     <div className="flex justify-center items-center flex-wrap">
                         <Link href="https://www.truity.com/test/type-finder-personality-test-new" passHref>
-                            <img className="m-1" src={`https://img.shields.io/badge/${t("personalityType")}-INTP-green`} alt="Ubuntu"/>
+                            <img className="m-1" src={`https://img.shields.io/badge/${t("personalityType")}-INTP-purple`} alt={t("personalityType")}/>
                         </Link>
-
+                        <Link href="https://sortinghatchats.wordpress.com/" passHref>
+                            <img title={t("hogwartsHousePrimaryExplain")} className="m-1" src={`https://img.shields.io/badge/${t("hogwartsHousePrimaryTitle")}-${t("hogwartsHousePrimaryValue")}-red`} alt={`${t("hogwartsHousePrimaryTitle")}-${t("hogwartsHousePrimaryValue")}`}/>
+                            <img title={t("hogwartsHouseSecondaryExplain")} className="m-1" src={`https://img.shields.io/badge/${t("hogwartsHouseSecondaryTitle")}-${t("hogwartsHouseSecondaryValue")}-blue`} alt={`${t("hogwartsHouseSecondaryTitle")}-${t("hogwartsHouseSecondaryValue")}`}/>
+                        </Link>
+                        <Link href="https://www.politicalcompass.org/" passHref>
+                            <img title={t("politicalCompassExplain")} className="m-1" src={`https://img.shields.io/badge/${t("politicalCompassEconomicTitle")}-${t("politicalCompassEconomicValue")}-green`} alt={`${t("politicalCompassEconomicTitle")}-${t("politicalCompassEconomicValue")}`}/>
+                            <img title={t("politicalCompassExplain")} className="m-1" src={`https://img.shields.io/badge/${t("politicalCompassSocialTitle")}-${t("politicalCompassSocialValue")}-green`} alt={`${t("politicalCompassSocialTitle")}-${t("politicalCompassSocialValue")}`}/>
+                        </Link>
+                        <Link href={t("furryWikiLink")} passHref>
+                            <img title={t("fursonaExplain")} className="m-1" src={`https://img.shields.io/badge/Fursona-${t("fursonaSpecies")}-orange?logo=furrynetwork`} alt={t("fursonaSpieces")}/>
+                        </Link>
                     </div>
                 </div>
             </Card>
