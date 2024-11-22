@@ -30,6 +30,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "cursor-effects.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
