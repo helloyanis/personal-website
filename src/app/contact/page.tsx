@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import Card from '../components/card';
 import { Button } from '@mui/material';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Page() {
     const { t } = useTranslation("contact");
@@ -23,7 +22,7 @@ export default function Page() {
                     className="m-2"
                     href="https://piaille.fr/@helloyanis"
                     startIcon={
-                        <img
+                        <Image
                             src="/assets/icons/mastodon.svg"
                             alt="Mastodon icon" 
                             className="w-6 h-6"
@@ -38,7 +37,7 @@ export default function Page() {
                     className="m-2"
                     href="https://jlai.lu/u/helloyanis"
                     startIcon={
-                        <img
+                        <Image
                             src="/assets/icons/lemmy.svg"
                             alt="Lemmy icon" 
                             className="w-6 h-6"
@@ -53,7 +52,7 @@ export default function Page() {
                     className="m-2"
                     href="https://www.youtube.com/@helloyanis"
                     startIcon={
-                        <img
+                        <Image
                             src="/assets/icons/youtube.svg"
                             alt="Youtube icon" 
                             className="w-6 h-6"

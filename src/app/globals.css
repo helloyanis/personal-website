@@ -46,3 +46,9 @@ nav {
     text-wrap: balance;
   }
 }
+
+.hover-effect:hover {
+  scale: 1.1;
+  box-shadow: 16px 16px var(--shadow);
+  transition: all 0.2s;
+}
