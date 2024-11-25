@@ -26,6 +26,8 @@ export default function Page() {
                             src="/assets/icons/mastodon.svg"
                             alt="Mastodon icon" 
                             className="w-6 h-6"
+                            width={24}
+                            height={24}
                         />
                     }
                 >
@@ -41,6 +43,8 @@ export default function Page() {
                             src="/assets/icons/lemmy.svg"
                             alt="Lemmy icon" 
                             className="w-6 h-6"
+                            width={24}
+                            height={24}
                         />
                     }
                 >
@@ -56,6 +60,8 @@ export default function Page() {
                             src="/assets/icons/youtube.svg"
                             alt="Youtube icon" 
                             className="w-6 h-6"
+                            width={24}
+                            height={24}
                         />
                     }
                 >
