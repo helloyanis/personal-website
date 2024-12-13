@@ -25,7 +25,7 @@ export default function Page() {
                         <Image
                             src="/assets/icons/mastodon.svg"
                             alt="Mastodon icon" 
-                            className="w-6 h-6"
+                            className="w-6 h-6 filter-white"
                             width={24}
                             height={24}
                         />
@@ -42,7 +42,7 @@ export default function Page() {
                         <Image
                             src="/assets/icons/lemmy.svg"
                             alt="Lemmy icon" 
-                            className="w-6 h-6"
+                            className="w-6 h-6 filter-white"
                             width={24}
                             height={24}
                         />
@@ -59,7 +59,7 @@ export default function Page() {
                         <Image
                             src="/assets/icons/youtube.svg"
                             alt="Youtube icon" 
-                            className="w-6 h-6"
+                            className="w-6 h-6 filter-white"
                             width={24}
                             height={24}
                         />
@@ -69,8 +69,27 @@ export default function Page() {
                 </Button>
                 </div>
                 <p className="text-center">
-                    {t("aboutSiteContent2")}
+                    {t("contactDescription2")}
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                    variant="contained" 
+                    color="primary"
+                    className="m-2"
+                    href="mailto:hello@xn--0ci5768mq9c.ws"
+                    startIcon={
+                        <Image
+                            src="/assets/icons/outgoing_mail.svg"
+                            alt="Email icon" 
+                            className="w-6 h-6"
+                            width={24}
+                            height={24}
+                        />
+                    }
+                >
+                    hello@🦊✨💻.ws
+                </Button>
+                </div>
                 
             </Card>
         </section>

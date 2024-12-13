@@ -14,7 +14,7 @@ export default function Shield({ src, alt, title }: ShieldProps) {
             src={src}
             alt={alt}
             title={title}
-            className="m-1"
+            className="m-1 shield-image"
             width={0}
             height={0}
             style={{ width: "auto", height: "1.5rem" }}

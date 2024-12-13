@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import './i18n';
 import FairyDustCursor from "./components/fairydust-cursor";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Navbar />
         <FairyDustCursor />
+        <Link rel="me" href="https://piaille.fr/@helloyanis"/>
         {children}
       </body>
     </html>

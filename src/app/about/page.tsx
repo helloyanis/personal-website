@@ -63,7 +63,9 @@ export default function Page() {
                         <Shield src="https://img.shields.io/badge/Kotlin-%237F52FF.svg?logo=kotlin&logoColor=white" alt="Kotlin"/>
                         <Shield src="https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white" alt="Java"/>
                         <Shield src="https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white" alt="PHP"/>
-                        <Shield src="https://img.shields.io/badge/Scratch-4D97FF?logo=scratch&logoColor=fff" alt="Scratch" title={t("fillInBadge")}/>
+                        <Link href="https://scratch.mit.edu/users/helloyanis/" passHref className="hover-effect">
+                            <Shield src="https://img.shields.io/badge/Scratch-4D97FF?logo=scratch&logoColor=fff" alt="Scratch" title={t("fillInBadge")}/>
+                        </Link>
                         <Shield src="https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white" alt="Markdown" title={t("fillInBadge")}/>
                     </div>
                     <p className="text-center font-bold">
@@ -90,18 +92,22 @@ export default function Page() {
                         <Link href="https://www.truity.com/test/type-finder-personality-test-new" passHref className="hover-effect">
                             <Shield src={`https://img.shields.io/badge/${t("personalityType")}-INTP-purple`} alt={t("personalityType")}/>
                         </Link>
-                        <Link href="https://sortinghatchats.wordpress.com/" passHref className="hover-effect">
+                        <div className="flex justify-center items-center flex-wrap flex-col">
+                            <Link href="https://sortinghatchats.wordpress.com/" passHref className="hover-effect">
                             <Shield title={t("hogwartsHousePrimaryExplain")} src={`https://img.shields.io/badge/${t("hogwartsHousePrimaryTitle")}-${t("hogwartsHousePrimaryValue")}-red`} alt={`${t("hogwartsHousePrimaryTitle")}-${t("hogwartsHousePrimaryValue")}`}/>
                         </Link>
                         <Link href="https://sortinghatchats.wordpress.com/" passHref className="hover-effect">
                             <Shield title={t("hogwartsHouseSecondaryExplain")} src={`https://img.shields.io/badge/${t("hogwartsHouseSecondaryTitle")}-${t("hogwartsHouseSecondaryValue")}-blue`} alt={`${t("hogwartsHouseSecondaryTitle")}-${t("hogwartsHouseSecondaryValue")}`}/>
                         </Link>
-                        <Link href="https://www.politicalcompass.org/" passHref className="hover-effect">
+                        </div>
+                        <div className="flex justify-center items-center flex-wrap flex-col">
+                            <Link href="https://www.politicalcompass.org/" passHref className="hover-effect">
                             <Shield title={t("politicalCompassExplain")} src={`https://img.shields.io/badge/${t("politicalCompassEconomicTitle")}-${t("politicalCompassEconomicValue")}-green`} alt={`${t("politicalCompassEconomicTitle")}-${t("politicalCompassEconomicValue")}`}/>
                         </Link>
                         <Link href="https://www.politicalcompass.org/" passHref className="hover-effect">
                             <Shield title={t("politicalCompassExplain")} src={`https://img.shields.io/badge/${t("politicalCompassSocialTitle")}-${t("politicalCompassSocialValue")}-green`} alt={`${t("politicalCompassSocialTitle")}-${t("politicalCompassSocialValue")}`}/>
                         </Link>
+                        </div>
                         <Link href={t("furryWikiLink")} passHref className="hover-effect">
                             <Shield title={t("fursonaExplain")} src={`https://img.shields.io/badge/Fursona-${t("fursonaSpecies")}-orange?logo=furrynetwork`} alt={t("fursonaSpieces")}/>
                         </Link>

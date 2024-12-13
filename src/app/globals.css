@@ -52,3 +52,7 @@ nav {
   box-shadow: 16px 16px var(--shadow);
   transition: all 0.2s;
 }
+
+.filter-white {
+  filter: invert(100%);
+}
