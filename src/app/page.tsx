@@ -1,5 +1,5 @@
 "use client"
-import { Button, CircularProgress, Skeleton } from '@mui/material';
+import { Skeleton } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Card from './components/card';
@@ -14,7 +14,7 @@ export default function Home() {
     }
   }, [i18n.isInitialized]);
 
-  const [url, setUrl] = useState('https://api.github.com/search/repositories?q=user:helloyanis+fork:true&sort=stars&per_page=10&type=Repositories');
+  const [url] = useState('https://api.github.com/search/repositories?q=user:helloyanis+fork:true&sort=stars&per_page=10&type=Repositories');
   const [items, setItems] = useState([]);
 
   useEffect(() => {
