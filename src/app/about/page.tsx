@@ -4,6 +4,7 @@ import Card from '../components/card';
 import { Button } from '@mui/material';
 import Shield from '../components/shield';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page() {
     const { t } = useTranslation("about");
@@ -27,9 +28,12 @@ export default function Page() {
                     color="primary" 
                     href="https://github.com/helloyanis/helloyanis.github.io"
                     startIcon={
-                        <Shield
+                        <Image
                             src="/assets/icons/github.svg"
-                            alt="GitHub icon"
+                            alt="GitHub icon" 
+                            className="w-6 h-6 filter-white"
+                            width={24}
+                            height={24}
                         />
                     }
                 >
