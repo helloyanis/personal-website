@@ -11,6 +11,7 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: false,
+    nonExplicitSupportedLngs: true,
     interpolation: {
       escapeValue: false, // React already does escaping
     },
