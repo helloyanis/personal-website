@@ -32,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <h1 className="hidden">helloyanis</h1>
         <Navbar />
         <FairyDustCursor />
         <Link rel="me" href="https://piaille.fr/@helloyanis"/>
