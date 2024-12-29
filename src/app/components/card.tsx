@@ -7,9 +7,10 @@ import { useEffect, useState } from 'react';
 
 interface CardProps {
     children: ReactNode;
+    height?: number;
 }
 
-export default function Card({ children }: CardProps) {
+export default function Card({ children, height }: CardProps) {
     const { i18n } = useTranslation("nav");
     const [isReady, setIsReady] = useState(false);
 
@@ -27,7 +28,7 @@ export default function Card({ children }: CardProps) {
     }else{
         return (
             <div className="card">
-                <Skeleton width={100} height={24} />
+                <Skeleton width={"100%"} height={height} />
             </div>
         );
     }

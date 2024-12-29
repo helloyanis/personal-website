@@ -29,8 +29,8 @@ export default function Home() {
   });
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-2">
-      <Card>
+    <div className="w-100 min-h-screen py-2">
+      <Card height={100}>
           <h1 className="text-4xl text-center font-bold">
             {t("welcomeText")}
           </h1>
@@ -47,7 +47,7 @@ export default function Home() {
           <Skeleton width={200} height={40} />
         )
       }
-      <div className='flex flex-wrap justify-center' id="reposContainer">
+      <div className='flex flex-wrap justify-center w-full' id="reposContainer">
         <ReposList items={items} />
       </div>
 

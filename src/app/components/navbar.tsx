@@ -16,52 +16,52 @@ export default function Navbar() {
 
   return (
     <nav className="p-4">
-      <ul className="flex space-x-4 text-center justify-center">
+      <div className="flex space-x-4 text-center justify-center">
         <Link href="/" className="nav-link" shallow>
-          <li>
+          <div>
             {isReady ? (
               
                 <span>{"🏠"}<br/>{t("home")}</span>
               
             ) : (
-              <Skeleton width={100} height={24} />
+              <Skeleton width={100} height={45} />
             )}
-          </li>
+          </div>
         </Link>
         <Link href="/about" className="nav-link" shallow>
-          <li>
+          <div>
             {isReady ? (
               
                 <span>{"ℹ️"}<br/>{t("about")}</span>
               
             ) : (
-              <Skeleton width={100} height={24} />
+              <Skeleton width={100} height={45} />
             )}
-          </li>
+          </div>
         </Link>
         <Link href="/contact" className="nav-link" shallow>
-          <li>
+          <div>
             {isReady ? (
               
                 <span>{"💬"}<br/>{t("contact")}</span>
               
             ) : (
-              <Skeleton width={100} height={24} />
+              <Skeleton width={100} height={45} />
             )}
-          </li>
+          </div>
         </Link>
         <Link href="/funzone" className="nav-link" shallow>
-          <li>
+          <div>
             {isReady ? (
               
                 <span>{"🕹️"}<br/>{t("funzone")}</span>
               
             ) : (
-              <Skeleton width={100} height={24} />
+              <Skeleton width={100} height={45} />
             )}
-          </li>
+          </div>
         </Link>
-      </ul>
+      </div>
     </nav>
   );
 }

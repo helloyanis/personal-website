@@ -15,7 +15,7 @@ export default function Page() {
     }
     return (
         <section className="grid grid-cols-1 gap-4 p-4">
-            <Card>
+            <Card height={300}>
                 <p className="text-2xl font-bold text-center">
                     {t("aboutSiteTitle")}
                 </p>
@@ -45,7 +45,7 @@ export default function Page() {
                 </p>
                 
             </Card>
-            <Card>              
+            <Card height={500}>              
                 <p className="text-2xl font-bold text-center">
                     {t("aboutMeTitle")}
                 </p>

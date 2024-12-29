@@ -8,7 +8,7 @@ export default function Page() {
     const { t } = useTranslation("contact");
     return (
         <section className="grid grid-cols-1 gap-4 p-4">
-            <Card>
+            <Card height={200}>
                 <p className="text-2xl font-bold text-center">
                     {t("contactTitle")}
                 </p>

@@ -17,7 +17,7 @@ export default function Page() {
         }, [i18n.isInitialized]);
     return (
         <section className="grid grid-cols-1 gap-4 p-4">
-            <Card>
+            <Card height={700}>
             <p className="text-2xl font-bold text-center">{t("luckTestTitle")}</p>
                 <div className="flex flex-row justify-around flex-wrap">
                     

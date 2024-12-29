@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, CircularProgress } from '@mui/material';
+import { Button, Skeleton } from '@mui/material';
 
 interface Repo {
   id: number;
@@ -14,11 +14,21 @@ interface ReposListProps {
 }
 
 const ReposList: React.FC<ReposListProps> = ({ items }) => {
-  if (!items) {
-    return <CircularProgress />;
+  if (!items || items.length === 0) {
+    return (
+      <div className='w-full'>
+        {Array.from({ length: 10 }).map((_, index) => (
+          <div className='card' key={index}>
+            <Skeleton variant="rectangular" width={150} height={40} className='my-3'/>
+            <Skeleton variant="rectangular" width={350} height={20} className='my-3'/>
+            <Skeleton variant="rectangular" width={200} height={20} className='my-3'/>
+          </div>
+        ))}
+      </div>
+    );
   }
   return (
-    <div>
+    <div className='w-full'>
       {items.map((repo) => (
         <div className="card" key={repo.id}>
           <h3 className="text-3xl text-center font-bold">{repo.name}</h3>
