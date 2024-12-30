@@ -7,7 +7,23 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "helloyanis",
-  description: "My personal website with lots of cool stuff!",
+  description: "🦊 My personal website with lots of cool stuff!",
+  openGraph: {
+    title: "helloyanis",
+    description: "🦊 My personal website with lots of cool stuff!",
+    type: "website",
+    locale: "en",
+    siteName: "helloyanis",
+    images: [
+      {
+        url: "https://xn--0ci5768mq9c.ws/assets/images/profile.png",
+        width: 1248,
+        height: 1248,
+        alt: "helloyanis",
+      },
+    ],
+  },
+  keywords: ["helloyanis", "yanis", "web", "developer", "portfolio", "rucoy calculator"],
 };
 
 export default function RootLayout({
