@@ -22,7 +22,6 @@ export default function Home() {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        console.log(data.items);
         setItems(data.items);
       })
       .catch(error => console.error('Error:', error));

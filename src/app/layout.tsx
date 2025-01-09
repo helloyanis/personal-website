@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import './i18n';
 import FairyDustCursor from "./components/fairydust-cursor";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
+import React from "react";
+import AnalyticsAlert from "./components/analyticsAlert";
 
 export const metadata: Metadata = {
   title: "helloyanis",
@@ -26,21 +30,24 @@ export const metadata: Metadata = {
   keywords: ["helloyanis", "yanis", "web", "developer", "portfolio", "rucoy calculator"],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gpcHeader = (await headers()).get('sec-gpc');
+  const shouldLoadAnalytics = gpcHeader !== '1';
+  
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
+      <body className="antialiased">
         <h1 className="hidden">helloyanis</h1>
         <Navbar />
         <FairyDustCursor />
         <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>
         {children}
+        {shouldLoadAnalytics && <Analytics />}
+        <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
       </body>
     </html>
   );
