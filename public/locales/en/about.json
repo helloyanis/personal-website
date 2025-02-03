@@ -7,6 +7,8 @@
     "aboutMeContent1": "I'm Yanis, a ",
     "aboutMeContent2": " year old fullstack developer, a furry (you could have guessed with an URL like that!), and I create plenty of tools to help people!\nFirefox add-ons, an Android app... As soon as I find a problem, I get to work to make a solution for everyone, so I can be the last person to have to face this problem! (Yes, even if it's something super-obscure that will be useful to 2 persons 😉)",
     "skillLanguages": "My languages",
+    "openPGPKey": "My OpenPGP public key",
+    "getKey": "Get the key",
     "skillTools": "My tools",
     "miscBadges": "Other things...\nClick on any badge to learn more or pass the test!",
     "personalityType": "Personality_type",

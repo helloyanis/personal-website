@@ -73,6 +73,14 @@ export default function Page() {
                         <Shield src="https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white" alt="Markdown" title={t("fillInBadge")}/>
                     </div>
                     <p className="text-center font-bold">
+                        {t("openPGPKey")}
+                    </p>
+                    <div className="flex justify-center items-center flex-wrap">
+                        <Link href="https://keys.openpgp.org/search?q=hello%40🦊✨💻.ws" passHref className="hover-effect">
+                            <Shield src={`https://img.shields.io/badge/PGP-${t("getKey")}-313131?logo=gnuprivacyguard&logoColor=white`} alt="PGP"/>
+                        </Link>
+                    </div>
+                    <p className="text-center font-bold">
                         {t("skillTools")}
                     </p>
                     <div className="flex justify-center items-center flex-wrap">

@@ -7,6 +7,8 @@
     "aboutMeContent1": "Je suis Yanis, un développeur Fullstack de ",
     "aboutMeContent2": " ans, furry (vous aurez pu deviner avec cette URL!), et je crée plein d'outils pour aider les gens!\nDes modules pour Firefox, une application Android... Du moment où je trouve un problème, je me mets à l'oeuvre pour mettre à disposition une solution pour tout le monde, afin que je sois la dernière personne à avoir à faire façe à ce problème! (Oui, même si c'est un truc hyper-obscur qui sera utile à genre 2 personnes 😉)",
     "skillLanguages": "Mes langages",
+    "openPGPKey": "Ma clé publique OpenPGP",
+    "getKey": "Obtenir la clé",
     "skillTools": "Mes outils",
     "miscBadges": "D'autres choses...\nCliquez sur n'importe quel badge pour passer le test!",
     "personalityType": "Type_de_personnalité",

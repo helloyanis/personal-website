@@ -1,7 +1,7 @@
 "use client"
 import { useTranslation } from 'react-i18next';
 import Card from '../components/card';
-import { Button } from '@mui/material';
+import { Button, Tooltip } from '@mui/material';
 import Image from 'next/image';
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
                 <p className="text-center">
                     {t("contactDescription1")}
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-around">
                 <Button 
                     variant="contained" 
                     color="primary"
@@ -72,23 +72,25 @@ export default function Page() {
                     {t("contactDescription2")}
                 </p>
                 <div className="flex justify-center">
-                <Button 
-                    variant="contained" 
-                    color="primary"
-                    className="m-2"
-                    href="mailto:hello@xn--0ci5768mq9c.ws"
-                    startIcon={
-                        <Image
-                            src="/assets/icons/outgoing_mail.svg"
-                            alt="Email icon" 
-                            className="w-6 h-6"
-                            width={24}
-                            height={24}
-                        />
-                    }
-                >
-                    hello@🦊✨💻.ws
-                </Button>
+                    <Tooltip title={t("hintEncryption")}>
+                        <Button 
+                            variant="contained" 
+                            color="primary"
+                            className="m-2"
+                            href="mailto:hello@xn--0ci5768mq9c.ws"
+                            startIcon={
+                                <Image
+                                    src="/assets/icons/outgoing_mail.svg"
+                                    alt="Email icon" 
+                                    className="w-6 h-6"
+                                    width={24}
+                                    height={24}
+                                />
+                            }
+                        >
+                            hello@🦊✨💻.ws
+                        </Button>
+                    </Tooltip>
                 </div>
                 
             </Card>
