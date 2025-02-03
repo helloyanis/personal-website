@@ -92,7 +92,6 @@ export default function Page() {
                         </Button>
                     </Tooltip>
                 </div>
-                
             </Card>
         </section>
     );
