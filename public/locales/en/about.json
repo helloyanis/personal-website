@@ -10,7 +10,7 @@
     "openPGPKey": "My OpenPGP public key",
     "getKey": "Get the key",
     "skillTools": "My tools",
-    "miscBadges": "Other things...\nClick on any badge to learn more or pass the test!",
+    "miscBadges": "Other things...",
     "personalityType": "Personality_type",
     "hogwartsHousePrimaryTitle": "Primary Hogwarts house",
     "hogwartsHousePrimaryValue": "Gryffindor",
@@ -25,5 +25,9 @@
     "politicalCompassExplain": "I'm trying do be as neutral as possible, but just like everyone, I have opinions, so it is important to know where I stand to help me fight against bias and understand more points of view.",
     "fursonaSpecies": "Fox",
     "furryWikiLink": "https://en.wikipedia.org/wiki/Furry_fandom",
-    "fillInBadge": "Yeah, it doesn't really fit in the category... But that makes one more badge, so I'll take it!!"
+    "fillInBadge": "Yeah, it doesn't really fit in the category... But that makes one more badge, so I'll take it!!",
+    "learnEsperantoTitle": "Learn Esperanto!",
+    "learnEsperantoValue": "Komencanto",
+    "learnEsperantoLink": "https://komencanto.net",
+    "learnEsperantoExplain": "Esperanto is a constructed language spoken throuought the world made to be easy to learn! It's a great starting point if you want to learn a new language, or make friends from anywhere in the world! The Komencanto website has a lot of good recources on how to get started."
 }

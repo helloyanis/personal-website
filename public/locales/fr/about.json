@@ -10,7 +10,7 @@
     "openPGPKey": "Ma clé publique OpenPGP",
     "getKey": "Obtenir la clé",
     "skillTools": "Mes outils",
-    "miscBadges": "D'autres choses...\nCliquez sur n'importe quel badge pour passer le test!",
+    "miscBadges": "D'autres choses...",
     "personalityType": "Type_de_personnalité",
     "hogwartsHousePrimaryTitle": "Maison de Poudlard primaire",
     "hogwartsHousePrimaryValue": "Gryffondor",
@@ -25,5 +25,9 @@
     "politicalCompassExplain": "J'essaie le plus souvent possible d'être neutre, mais comme tout le monde, j'ai des opinions, il est donc important de savoir où je me situe pour que je puisse comprendre plus de points de vue.",
     "fursonaSpecies": "Renard",
     "furryWikiLink": "https://fr.wikipedia.org/wiki/Fandom_furry",
-    "fillInBadge": "Oui, ca ne rentre pas vraiment dans la catégorie... Mais c'est un badge de plus, donc je prends!"
+    "fillInBadge": "Oui, ca ne rentre pas vraiment dans la catégorie... Mais c'est un badge de plus, donc je prends!",
+    "learnEsperantoLink": "https://ikurso.esperanto-france.org/",
+    "learnEsperantoTitle": "Apprendre l'espéranto!",
+    "learnEsperantoValue": "iKurso",
+    "learnEsperantoExplain": "L'espéranto est une langue construite qui a pour but de faciliter la communication entre les peuples. C'est une langue très simple à apprendre, et qui peut être un bon point de départ pour apprendre d'autres langues ou se faire de nouveaux amis partout dans le monde!"
 }

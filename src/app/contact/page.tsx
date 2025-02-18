@@ -1,6 +1,6 @@
 "use client"
 import { useTranslation } from 'react-i18next';
-import Card from '../components/card';
+import Card from '../../components/card';
 import { Button, Tooltip } from '@mui/material';
 import Image from 'next/image';
 

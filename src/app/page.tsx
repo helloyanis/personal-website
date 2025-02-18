@@ -2,8 +2,8 @@
 import { Skeleton } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import Card from './components/card';
-import ReposList from './components/reposList';
+import Card from '../components/card';
+import ReposList from '../components/reposList';
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [isReady, setIsReady] = useState(false);
@@ -46,7 +46,7 @@ export default function Home() {
           <Skeleton width={200} height={40} />
         )
       }
-      <div className='flex flex-wrap justify-center w-full' id="reposContainer">
+      <div className='w-full' id="reposContainer">
         <ReposList items={items} />
       </div>
 
