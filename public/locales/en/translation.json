@@ -3,6 +3,6 @@
     "welcomeDescription": "There is a little bit of everything in this website, I'll add everything that looks cool, useful or anything else. Take a look around and see if there is something you like! If you would like to see what I have done, you can see below my GitHub repositories with the most stars!",
     "popularRepositories": "Popular repositories",
     "seeMore": "See more on GitHub",
-    "analyticsEnabled": "Anonymous data is collected to improve the site. You can disable it by configuring the GPC (Global Privacy Control) in your browser settings.",
+    "analyticsEnabled": "Anonymous data is collected using Google Analytics to improve the site. You can disable it by configuring the GPC (Global Privacy Control) in your browser settings.",
     "analyticsDisabled": "No data is collected because you have enabled the GPC (Global Privacy Control) in your browser settings."
 }

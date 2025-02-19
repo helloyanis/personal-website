@@ -5,9 +5,9 @@ import Navbar from "../components/navbar";
 import './i18n';
 import FairyDustCursor from "../components/fairydust-cursor";
 import Link from "next/link";
-import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import AnalyticsAlert from "../components/analyticsAlert";
+import ReactGA from "react-ga4";
 
 export const metadata: Metadata = {
   title: "helloyanis",
@@ -36,8 +36,11 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const gpcHeader = (await headers()).get('sec-gpc');
-  const shouldLoadAnalytics = gpcHeader !== '1';
-  
+  const doNotTrack = (await headers()).get('dnt');
+  const shouldLoadAnalytics = gpcHeader !== '1' || doNotTrack !== '1';
+  if(shouldLoadAnalytics) {
+    ReactGA.initialize("G-RZHWSNTY6V");
+  }
   return (
     <html lang="en">
       <body className="antialiased">
@@ -47,7 +50,6 @@ export default async function RootLayout({
       <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>
       <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
       {children}
-      {shouldLoadAnalytics && <Analytics />}
       <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
       </body>
     </html>

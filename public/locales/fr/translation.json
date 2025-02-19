@@ -3,6 +3,6 @@
     "welcomeDescription": "C'est un peu un site fourre-tout, j'y ajoute tout ce que je peux trouver sympa, utile ou quoi que ce soit d'autre. Faites-y un tour et voyez si quelque chose vous plaît! Si vous voulez voir ce que j'ai fait, voilà mes dépôts GitHub avec le plus d'étoiles ci-dessous!",
     "popularRepositories": "Projets populaires",
     "seeMore": "Voir plus sur GitHub",
-    "analyticsEnabled": "Des données anonymes sont collectées pour améliorer le site. Vous pouvez les désactiver en configurant le GPC (Global Privacy Control) dans les paramètres de votre navigateur.",
+    "analyticsEnabled": "Des données anonymes sont collectées avec Google Analytics pour améliorer le site. Vous pouvez les désactiver en configurant le GPC (Global Privacy Control) dans les paramètres de votre navigateur.",
     "analyticsDisabled": "Aucune donnée n'est collectée car vous avez activé le GPC (Global Privacy Control) dans les paramètres de votre navigateur."
 }
