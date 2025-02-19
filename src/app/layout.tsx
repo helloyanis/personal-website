@@ -7,7 +7,7 @@ import FairyDustCursor from "../components/fairydust-cursor";
 import Link from "next/link";
 import React from "react";
 import AnalyticsAlert from "../components/analyticsAlert";
-import ReactGA from "react-ga4";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "helloyanis",
@@ -38,9 +38,6 @@ export default async function RootLayout({
   const gpcHeader = (await headers()).get('sec-gpc');
   const doNotTrack = (await headers()).get('dnt');
   const shouldLoadAnalytics = gpcHeader !== '1' || doNotTrack !== '1';
-  if(shouldLoadAnalytics) {
-    ReactGA.initialize("G-RZHWSNTY6V");
-  }
   return (
     <html lang="en">
       <body className="antialiased">
@@ -51,6 +48,7 @@ export default async function RootLayout({
       <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
       {children}
       <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
+      {shouldLoadAnalytics && <GoogleAnalytics gaId="G-RZHWSNTY6V"/>}
       </body>
     </html>
   );
