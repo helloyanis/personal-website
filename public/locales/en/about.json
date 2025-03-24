@@ -1,4 +1,5 @@
 {
+    "pageTitle": "About • helloyanis 🦊",
     "aboutSiteTitle": "About this site",
     "aboutSiteContent1": "It's going to be a little bit technical, so hang in there!\nThis site is made with React using Next.js and i18next. You can check the source code on GitHub!",
     "sourceCode": "Let's go!",

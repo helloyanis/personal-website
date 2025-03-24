@@ -10,11 +10,11 @@ import AnalyticsAlert from "../components/analyticsAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
-  title: "helloyanis",
-  description: "🦊 My personal website with lots of cool stuff!",
+  title: "🦊 helloyanis",
+  description: "My personal website with lots of cool stuff! Learn about my latest projects and find out more about me!",
   openGraph: {
     title: "helloyanis",
-    description: "🦊 My personal website with lots of cool stuff!",
+    description: "My personal website with lots of cool stuff! Learn about my latest projects and find out more about me!",
     type: "website",
     locale: "en",
     siteName: "helloyanis",
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-  keywords: ["helloyanis", "yanis", "web", "developer", "portfolio", "rucoy calculator"],
+  keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator"],
+  authors: [{name:"helloyanis", url:"https://xn--0ci5768mq9c.ws"}],
 };
 
 export default async function RootLayout({
