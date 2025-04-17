@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/material';
+import { Alert, Button, FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 
@@ -18,6 +18,18 @@ export default function Navbar() {
 
   return (
     <ThemeProvider theme={theme}>
+      {isReady ? (
+      <Alert severity="info"
+        action={
+          <Button href='https://eci.ec.europa.eu/045/public/#/screen/home' target='_blank' rel='noopener noreferrer' variant="outlined">
+          <span>{t("skgbutton")}</span>
+          </Button>
+        }>
+          <span>{t("skgbanner")}</span>
+      </Alert>
+      ) : (
+        <Skeleton width={"100%"} height={50} />
+      )}
     <nav className="p-4">
       <div className="flex justify-between items-center">
         <div className="flex space-x-4 text-center">

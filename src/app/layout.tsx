@@ -43,6 +43,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className="antialiased">
       <h1 className="hidden">helloyanis</h1>
+      <link rel="alternate" hrefLang="fr" href="https://xn--0ci5768mq9c.ws" />
+      <link rel="alternate" hrefLang="en" href="https://xn--0ci5768mq9c.ws" />
       <Navbar />
       <FairyDustCursor />
       <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>
