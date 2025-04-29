@@ -20,7 +20,7 @@ export default function Page() {
                     variant="contained" 
                     color="primary"
                     className="m-2"
-                    href="https://piaille.fr/@helloyanis"
+                    href="https://furries.club/@helloyanis"
                     startIcon={
                         <Image
                             src="/assets/icons/mastodon.svg"
