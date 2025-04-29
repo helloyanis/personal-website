@@ -48,6 +48,7 @@ export default async function RootLayout({
       <Navbar />
       <FairyDustCursor />
       <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>
+      <Link rel="me" href="https://furries.club/@helloyanis" className="hidden">Mastodon</Link>
       <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
       {children}
       <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
