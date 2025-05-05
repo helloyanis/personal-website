@@ -50,23 +50,6 @@ export default function Page() {
                 >
                     Lemmy
                 </Button>
-                <Button 
-                    variant="contained" 
-                    color="primary"
-                    className="m-2"
-                    href="https://www.youtube.com/@helloyanis"
-                    startIcon={
-                        <Image
-                            src="/assets/icons/youtube.svg"
-                            alt="Youtube icon" 
-                            className="w-6 h-6 filter-white"
-                            width={24}
-                            height={24}
-                        />
-                    }
-                >
-                    Youtube
-                </Button>
                 </div>
                 <p className="text-center">
                     {t("contactDescription2")}
