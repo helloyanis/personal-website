@@ -31,7 +31,7 @@ export default function Navbar() {
         <Skeleton width={"100%"} height={50} />
       )}
     <nav className="p-4">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-wrap justify-between items-center">
         <div className="flex space-x-4 text-center">
           <Link href="/" className="nav-link" shallow>
             <div>
@@ -71,7 +71,7 @@ export default function Navbar() {
           </Link>
         </div>
         {isReady ? (
-          <FormControl variant="outlined" size="small" sx={{ minWidth: 120, color: theme.palette.text.primary }}>
+          <FormControl variant="outlined" size="small" sx={{ minWidth: 120, marginTop: 1, color: theme.palette.text.primary }}>
             <InputLabel id="language">{t("language")}</InputLabel>
             <Select
               labelId='language'

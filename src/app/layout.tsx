@@ -38,7 +38,10 @@ export default async function RootLayout({
 }>) {
   const gpcHeader = (await headers()).get('sec-gpc');
   const doNotTrack = (await headers()).get('dnt');
-  const shouldLoadAnalytics = (gpcHeader && gpcHeader !== '1') || (doNotTrack && doNotTrack !== '1');
+  let shouldLoadAnalytics = true;
+  if(gpcHeader === '1' || doNotTrack === '1') {
+    shouldLoadAnalytics = false;
+  }
   return (
     <html lang="en">
       <body className="antialiased">
@@ -51,8 +54,8 @@ export default async function RootLayout({
       <Link rel="me" href="https://furries.club/@helloyanis" className="hidden">Mastodon</Link>
       <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
       {children}
-      <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics || true} />
-      {shouldLoadAnalytics && <GoogleAnalytics gaId="G-X4R5V1RGB2"/>}
+      <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
+      {(shouldLoadAnalytics) && <GoogleAnalytics gaId="G-X4R5V1RGB2"/>}
       </body>
     </html>
   );
