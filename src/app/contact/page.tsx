@@ -60,7 +60,7 @@ export default function Page() {
                             variant="contained" 
                             color="primary"
                             className="m-2"
-                            href="mailto:hello@xn--0ci5768mq9c.ws"
+                            href="mailto:hello@xn--3s8h30f.ws"
                             startIcon={
                                 <Image
                                     src="/assets/icons/outgoing_mail.svg"
@@ -71,7 +71,7 @@ export default function Page() {
                                 />
                             }
                         >
-                            hello@🦊✨💻.ws
+                            hello@🦊💻.ws
                         </Button>
                     </Tooltip>
                 </div>
