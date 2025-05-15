@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "helloyanis",
     images: [
       {
-        url: "https://xn--0ci5768mq9c.ws/assets/images/profile.png",
+        url: "https://xn--3s8h30f.ws/assets/images/profile.png",
         width: 1248,
         height: 1248,
         alt: "helloyanis",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator"],
-  authors: [{name:"helloyanis", url:"https://xn--0ci5768mq9c.ws"}],
+  authors: [{name:"helloyanis", url:"https://xn--3s8h30f.ws"}],
 };
 
 export default async function RootLayout({
@@ -46,8 +46,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className="antialiased">
       <h1 className="hidden">helloyanis</h1>
-      <link rel="alternate" hrefLang="fr" href="https://xn--0ci5768mq9c.ws" />
-      <link rel="alternate" hrefLang="en" href="https://xn--0ci5768mq9c.ws" />
+      <link rel="alternate" hrefLang="fr" href="https://xn--3s8h30f.ws" />
+      <link rel="alternate" hrefLang="en" href="https://xn--3s8h30f.ws" />
       <Navbar />
       <FairyDustCursor />
       <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>

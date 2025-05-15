@@ -76,7 +76,7 @@ export default function Page() {
                         {t("openPGPKey")}
                     </p>
                     <div className="flex justify-center items-center flex-wrap">
-                        <Link href="https://keys.openpgp.org/search?q=hello%40🦊✨💻.ws" passHref rel="me" className="hover-effect">
+                        <Link href="https://keys.openpgp.org/search?q=hello%40🦊💻.ws" passHref rel="me" className="hover-effect">
                             <Shield src={`https://img.shields.io/badge/PGP-${t("getKey")}-313131?logo=gnuprivacyguard&logoColor=white`} alt="PGP" />
                         </Link>
                     </div>
