@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Skeleton } from '@mui/material';
 import Image from 'next/image';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 interface Repo {
   id: number;
@@ -32,12 +33,12 @@ const ReposList: React.FC<ReposListProps> = ({ items }) => {
     <div className='flex flex-wrap justify-center'>
       {items.map((repo) => (
         <div className="card flex-auto" key={repo.id}>
-          <h3 className="text-3xl text-center font-bold">{repo.name}</h3>
+          <h3 className="text-3xl text-center">{repo.name}</h3>
           {repo.description && <p>{repo.description}</p>}
           <span className="flex justify-between items-center">
             <p className="repoCard__stars">⭐ {repo.stargazers_count}</p>
-            <Button variant="contained" color="primary" href={repo.html_url} target="_blank">
-              <Image src={"/assets/icons/open_in_new.svg"} alt="Open in new tab" width={20} height={20}/>
+            <Button variant="contained" href={repo.html_url} target="_blank">
+              <OpenInNewIcon className="mr-2" />
               View
             </Button>
           </span>

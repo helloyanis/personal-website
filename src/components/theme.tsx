@@ -1,11 +1,30 @@
 "use client";
-import { createTheme } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
     colorSchemes: {
-        light: true,
-        dark: true,
-      },
+        light: {
+          palette: {
+            primary: {
+              main: '#db965f',
+            },
+          }
+        },
+        dark: {
+            palette: {
+                primary: {
+                    main: '#db965f'
+                    }
+                  }
+                }
+              }
+
 })
 
-export default theme;
+export default function Theme({ children }: { children: React.ReactNode }) {
+    return (
+      <ThemeProvider theme={theme}>
+        {children}
+      </ThemeProvider>
+    );
+  }

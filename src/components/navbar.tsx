@@ -17,7 +17,7 @@ export default function Navbar() {
   }, [i18n.isInitialized]);
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       {isReady ? (
       <Alert severity="info"
         action={
@@ -71,7 +71,7 @@ export default function Navbar() {
           </Link>
         </div>
         {isReady ? (
-          <FormControl variant="outlined" size="small" sx={{ minWidth: 120, marginTop: 1, color: theme.palette.text.primary }}>
+          <FormControl variant="outlined" size="small" sx={{ minWidth: 120, marginTop: 1 }}>
             <InputLabel id="language">{t("language")}</InputLabel>
             <Select
               labelId='language'
@@ -88,6 +88,6 @@ export default function Navbar() {
         )}
       </div>
     </nav>
-    </ThemeProvider>
+    </>
   );
 }

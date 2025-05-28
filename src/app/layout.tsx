@@ -8,6 +8,9 @@ import Link from "next/link";
 import React from "react";
 import AnalyticsAlert from "../components/analyticsAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { ThemeProvider } from "@emotion/react";
+import theme from "@/components/theme";
+import Theme from "@/components/theme";
 
 export const metadata: Metadata = {
   title: "🦊 helloyanis",
@@ -44,19 +47,20 @@ export default async function RootLayout({
   }
   return (
     <html lang="en">
-      <body className="antialiased">
-      <h1 className="hidden">helloyanis</h1>
-      <link rel="alternate" hrefLang="fr" href="https://xn--3s8h30f.ws" />
-      <link rel="alternate" hrefLang="en" href="https://xn--3s8h30f.ws" />
-      <Navbar />
-      <FairyDustCursor />
-      <Link rel="me" href="https://piaille.fr/@helloyanis" className="hidden">Mastodon</Link>
-      <Link rel="me" href="https://furries.club/@helloyanis" className="hidden">Mastodon</Link>
-      <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
-      {children}
-      <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
-      {(shouldLoadAnalytics) && <GoogleAnalytics gaId="G-X4R5V1RGB2"/>}
-      </body>
+      <Theme>
+        <body className="antialiased">
+        <h1 className="hidden">helloyanis</h1>
+        <link rel="alternate" hrefLang="fr" href="https://xn--3s8h30f.ws" />
+        <link rel="alternate" hrefLang="en" href="https://xn--3s8h30f.ws" />
+        <Navbar />
+        <FairyDustCursor />
+        <Link rel="me" href="https://furries.club/@helloyanis" className="hidden">Mastodon</Link>
+        <Link rel="me" href="https://github.com/helloyanis" className="hidden">GitHub</Link>
+        {children}
+        <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
+        {(shouldLoadAnalytics) && <GoogleAnalytics gaId="G-X4R5V1RGB2"/>}
+        </body>
+      </Theme>
     </html>
   );
 }
