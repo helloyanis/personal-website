@@ -2,7 +2,6 @@
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/card';
 import { Button, Skeleton } from '@mui/material';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import LuckTest from '@/components/luckTest';
 import { ArrowForward } from '@mui/icons-material';
@@ -12,10 +11,6 @@ export default function Page() {
     const luckAmount = Math.floor(Math.random() * 5);
     const [isReady, setIsReady] = useState(false);
     const [isLuckDialogOpen, setIsLuckDialogOpen] = useState(false);
-
-    const handleDialogClose = () => {
-        setIsLuckDialogOpen(false);
-    }
     const handleDialogOpen = () => {
         setIsLuckDialogOpen(true);
     }

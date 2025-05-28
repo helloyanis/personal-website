@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { Alert, Button, FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation("nav");

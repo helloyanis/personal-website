@@ -8,8 +8,6 @@ import Link from "next/link";
 import React from "react";
 import AnalyticsAlert from "../components/analyticsAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { ThemeProvider } from "@emotion/react";
-import theme from "@/components/theme";
 import Theme from "@/components/theme";
 
 export const metadata: Metadata = {

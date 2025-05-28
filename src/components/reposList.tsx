@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Skeleton } from '@mui/material';
-import Image from 'next/image';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 interface Repo {
