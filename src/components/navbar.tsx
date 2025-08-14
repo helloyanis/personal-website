@@ -16,18 +16,6 @@ export default function Navbar() {
 
   return (
     <>
-      {isReady ? (
-      <Alert severity="info"
-        action={
-          <Button href='https://eci.ec.europa.eu/045/public/#/screen/home' target='_blank' rel='noopener noreferrer' variant="outlined">
-          <span>{t("skgbutton")}</span>
-          </Button>
-        }>
-          <span>{t("skgbanner")}</span>
-      </Alert>
-      ) : (
-        <Skeleton width={"100%"} height={50} />
-      )}
     <nav className="p-4">
       <div className="flex flex-wrap justify-between items-center">
         <div className="flex space-x-4 text-center">
