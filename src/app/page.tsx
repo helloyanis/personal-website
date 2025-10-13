@@ -37,6 +37,15 @@ export default function Home() {
             {t("welcomeDescription")}
           </p>
       </Card>
+      {/* {
+        isReady ? (
+          <h2 className="text-2xl font-bold mt-8">
+            {t("featuredProjectsTitle")}
+          </h2>
+        ) : ( 
+          <Skeleton width={200} height={40} />
+        )
+      } */}
       {
         isReady ? (
           <h2 className="text-2xl font-bold mt-8">

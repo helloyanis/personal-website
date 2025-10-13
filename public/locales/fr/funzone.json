@@ -1,8 +1,13 @@
 {
     "luckTestTitle": "Test de chance",
-    "luckTestDescription": "Vous avez de la chance! Vous avez trouvé le test de chance!\nLancez la vidéo pour voir si vous avez de la chance aujourd'hui! (activez le son!)\nCrédits : Vidéo du jeu Flipnic sur PS2",
-    "goLink": "Lancer!",
+    "luckTestHeadline": "Êtes-vous chanceux-se aujourd'hui? Testez votre chance!",
+    "luckTestDescription": "Vous avez de la chance! Vous avez trouvé le test de chance!\nLancez la vidéo pour voir si vous aurez de la chance aujourd'hui! (activez le son!)\nCrédits : Vidéo du jeu Flipnic sur PS2",
+    "goLink": "Jouer!",
     "theUselessWebDescription": "Un site qui vous emmène sur un site aléatoire! C'est inutile, mais c'est marrant!",
-    "funLinks": "Liens marrants",
-    "tusmoDescription": "Comme motus! Trouvez le mot mystère en 5 essais!"
+    "funLinks": "Liens sympas",
+    "tusmoDescription": "Comme motus! Trouvez le mot mystère en 5 essais!",
+    "suikaPlanetsDescription": "Une variante du jeu Suika Game (le jeu de la pastèque), avec des planètes à la place des fruits, et des défis quotidiens!",
+    "tetrioDescription": "Un jeu de puzzle d'empilage de blocs (qui n'est légalement pas Tetris!), en multijoueur et jouable sur navigateur!",
+    "friendLinks": "Jetez un oeil aux sites de ces super personnes!",
+    "addFriendLink": "Vous pensez que vous devriez être ici?"
 }
