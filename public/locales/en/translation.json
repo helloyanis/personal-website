@@ -4,12 +4,14 @@
     "featuredProjectsTitle": "Featured projects",
     "featuredProjectsDescription": "Some of the stuff I made, and that I'm proud of (and you should definitely try!)",
     "featuredProject1": "Media Downloader Unleashed!!",
-    "featuredProject1Desc": "A browser extension that allows you to download media from various websites as you browse!",
+    "featuredProject1Desc": "A browser extension that allows you to download media from various websites as you browse! Works with many sites, is highly customizable while having a simple UI, and is free and open source! Over 7000 users on the Mozilla Add-ons store!",
     "featuredProject2": "JavaScript File Explorer",
-    "featuredProject2Desc": "An app that runs in your web browser and allows you to explore your local files and folders, as well as checking the size of folders and open some files!",
+    "featuredProject2Desc": "An app that runs in your web browser and allows you to explore your local files and folders, as well as checking the size of folders and open some files! You don't need to download anything, everything runs in your browser, client-side for optimal privacy! You can also use it offline by installing the Progressive Web App (PWA)!",
     "viewProject": "View project",
+    "viewOnGitHub": "View on GitHub",
+    "sourceCode": "Source code",
     "popularRepositories": "Popular repositories",
     "seeMore": "See more on GitHub",
-    "analyticsEnabled": "Anonymous data is collected using Google Analytics to improve the site. You can disable it by configuring the GPC (Global Privacy Control) in your browser settings.",
-    "analyticsDisabled": "No data is collected because you have enabled the GPC (Global Privacy Control) in your browser settings."
+    "analyticsEnabled": "Anonymous data is collected using Google Analytics to improve the site. You can disable it by configuring the GPC (Global Privacy Control) or Do Not Track in your browser settings.",
+    "analyticsDisabled": "No data is collected because you have enabled the GPC (Global Privacy Control) or Do Not track in your browser settings."
 }

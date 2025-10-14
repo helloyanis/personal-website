@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Card from '../components/card';
 import ReposList from '../components/reposList';
+import FeaturedProject from '@/components/featuredProject';
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [isReady, setIsReady] = useState(false);
@@ -37,7 +38,7 @@ export default function Home() {
             {t("welcomeDescription")}
           </p>
       </Card>
-      {/* {
+      {
         isReady ? (
           <h2 className="text-2xl font-bold mt-8">
             {t("featuredProjectsTitle")}
@@ -45,7 +46,30 @@ export default function Home() {
         ) : ( 
           <Skeleton width={200} height={40} />
         )
-      } */}
+      }
+      {
+        isReady ? (
+          <h2 className="text-xl text-center mt-8">
+            {t("featuredProjectsDescription")}
+          </h2>
+        ) : ( 
+          <Skeleton width={200} height={40} />
+        )
+      }
+      <FeaturedProject
+        name={t("featuredProject1")}
+        description={t("featuredProject1Desc")}
+        try_url='https://addons.mozilla.org/addon/media-downloader-unleashed?utm_source=personal-website'
+        source_url='https://github.com/helloyanis/media-downloader-unleashed'
+        screenshot_url='/assets/images/mdunleashed.png'
+        />
+        <FeaturedProject
+        name={t("featuredProject2")}
+        description={t("featuredProject2Desc")}
+        try_url='https://explorer.🦊💻.ws'
+        source_url='https://github.com/helloyanis/js-explorer'
+        screenshot_url='/assets/images/jsexplorer.png'
+        />
       {
         isReady ? (
           <h2 className="text-2xl font-bold mt-8">

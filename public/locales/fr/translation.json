@@ -1,8 +1,17 @@
 {
     "welcomeText": "Salut! Je suis helloyanis 🦊",
     "welcomeDescription": "C'est un peu un site fourre-tout, j'y ajoute tout ce que je peux trouver sympa, utile ou quoi que ce soit d'autre. Faites-y un tour et voyez si quelque chose vous plaît! Si vous voulez voir ce que j'ai fait, voilà mes dépôts GitHub avec le plus d'étoiles ci-dessous!",
+    "featuredProjectsTitle": "Projets notables",
+    "featuredProjectsDescription": "Des trucs que j'ai fait, et dont je suis assez fier! (Et que vous devriez essayer à 100%!)",
+    "featuredProject1": "Media Downloader Unleashed!!",
+    "featuredProject1Desc": "Une extension de navigateur qui vous permet de télécharger des médias depuis divers sites web pendant que vous naviguez! Fonctionne avec de nombreux sites, dispose de beaucoup d'options tout en ayant une interface simple! En plus, c'est gratuit et open source! Plus de 7000 utilisateurs sur le store de modules pour Firefox!",
+    "featuredProject2": "Explorateur de fichiers JavaScript",
+    "featuredProject2Desc": "Une application qui s'exécute dans votre navigateur web et vous permet d'explorer vos fichiers et dossiers locaux, ainsi que de vérifier la taille des dossiers et d'ouvrir certains fichiers! Vous n'avez rien besoin de télécharger, tout s'éxécute dans votre navigateur, côté client pour un respect optimal de la vie privée! Vous pouvez également l'utiliser hors ligne en installant l'application web progressive (PWA)!",
+    "tryItOut": "Essayez-le!",
+    "viewOnGitHub": "Voir sur GitHub",
+    "sourceCode": "Code source",
     "popularRepositories": "Projets populaires",
     "seeMore": "Voir plus sur GitHub",
-    "analyticsEnabled": "Des données anonymes sont collectées avec Google Analytics pour améliorer le site. Vous pouvez les désactiver en configurant le GPC (Global Privacy Control) dans les paramètres de votre navigateur.",
-    "analyticsDisabled": "Aucune donnée n'est collectée car vous avez activé le GPC (Global Privacy Control) dans les paramètres de votre navigateur."
+    "analyticsEnabled": "Des données anonymes sont collectées avec Google Analytics pour améliorer le site. Vous pouvez les désactiver en configurant le GPC (Global Privacy Control) ou la fonction Do Not Track dans les paramètres de votre navigateur.",
+    "analyticsDisabled": "Aucune donnée n'est collectée car vous avez activé le GPC (Global Privacy Control) ou la fonction Do Not Track dans les paramètres de votre navigateur."
 }

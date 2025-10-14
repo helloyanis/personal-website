@@ -131,6 +131,21 @@ export default function Page() {
             <Card>
                 <div className="flex items-center">
                     <Button 
+                        variant="contained" 
+                        color="primary"
+                        className="m-2"
+                        href="https://tirifto.xwx.moe/"
+                        startIcon={
+                            <ArrowForward/>
+                        }
+                    >
+                        {"Trifito's site"}
+                    </Button>
+                </div>
+            </Card>
+            <Card>
+                <div className="flex items-center">
+                    <Button 
                         variant="outlined" 
                         color="primary"
                         className="m-2"

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Skeleton } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { t } from 'i18next';
 
 interface Repo {
   id: number;
@@ -38,7 +39,7 @@ const ReposList: React.FC<ReposListProps> = ({ items }) => {
             <p className="repoCard__stars">⭐ {repo.stargazers_count}</p>
             <Button variant="contained" href={repo.html_url} target="_blank">
               <OpenInNewIcon className="mr-2" />
-              View
+              {t("viewOnGitHub")}
             </Button>
           </span>
         </div>
