@@ -3,6 +3,7 @@ import { Button, Skeleton } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Card from './card';
 import { t } from 'i18next';
+import Image from 'next/image';
 
 interface ReposListProps {
   name: string;
@@ -17,7 +18,7 @@ const FeaturedProject: React.FC<ReposListProps> = ({ name, description, try_url,
     <Card>
         <h3 className="text-3xl text-center">{name}</h3>
         {screenshot_url ? (
-            <img src={screenshot_url} alt={`${name} screenshot`} className="mx-auto my-4 max-h-64 object-contain"/>
+            <Image src={screenshot_url} alt={`${name} screenshot`} className="mx-auto my-4 max-h-64 object-contain" width={500} height={500}/>
         ) : (
             <Skeleton variant="rectangular" width={"100%"} height={256} className='my-4'/>
         )}
