@@ -2,7 +2,8 @@
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/card';
 import { Button, Tooltip } from '@mui/material';
-import Image from 'next/image';
+import { SiLemmy, SiMastodon, SiMatrix } from '@icons-pack/react-simple-icons';
+import { OutgoingMail } from '@mui/icons-material';
 
 export default function Page() {
     const { t } = useTranslation("contact");
@@ -22,33 +23,30 @@ export default function Page() {
                     className="m-2"
                     href="https://furries.club/@helloyanis"
                     startIcon={
-                        <Image
-                            src="/assets/icons/mastodon.svg"
-                            alt="Mastodon icon" 
-                            className="w-6 h-6 filter-white"
-                            width={24}
-                            height={24}
-                        />
+                        <SiMastodon/>
                     }
                 >
                     Mastodon
                 </Button>
                 <Button 
-                    variant="contained" 
+                    variant="outlined" 
                     color="primary"
-                    className="m-2"
                     href="https://jlai.lu/u/helloyanis"
                     startIcon={
-                        <Image
-                            src="/assets/icons/lemmy.svg"
-                            alt="Lemmy icon" 
-                            className="w-6 h-6 filter-white"
-                            width={24}
-                            height={24}
-                        />
+                        <SiLemmy/>
                     }
                 >
                     Lemmy
+                </Button>
+                <Button 
+                    variant="outlined" 
+                    color="primary"
+                    href="https://matrix.to/#/@helloyanis:matrix.org"
+                    startIcon={
+                        <SiMatrix/>
+                    }
+                >
+                    Matrix
                 </Button>
                 </div>
                 <p className="text-center">
@@ -62,13 +60,7 @@ export default function Page() {
                             className="m-2"
                             href="mailto:hello@xn--3s8h30f.ws"
                             startIcon={
-                                <Image
-                                    src="/assets/icons/outgoing_mail.svg"
-                                    alt="Email icon" 
-                                    className="w-6 h-6"
-                                    width={24}
-                                    height={24}
-                                />
+                                <OutgoingMail/>
                             }
                         >
                             hello@🦊💻.ws
