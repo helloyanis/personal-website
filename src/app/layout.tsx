@@ -14,22 +14,22 @@ export const metadata: Metadata = {
   title: "🦊 helloyanis",
   description: "My personal website with lots of cool stuff! Learn about my latest projects and find out more about me!",
   openGraph: {
-    title: "helloyanis",
+    title: "🦊 helloyanis",
     description: "My personal website with lots of cool stuff! Learn about my latest projects and find out more about me!",
     type: "website",
     locale: "en",
-    siteName: "helloyanis",
+    siteName: "🦊 helloyanis",
     images: [
       {
         url: "https://xn--3s8h30f.ws/assets/images/profile.png",
         width: 1248,
         height: 1248,
-        alt: "helloyanis",
+        alt: "helloyanis's profile image",
       },
     ],
   },
-  keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator"],
-  authors: [{name:"helloyanis", url:"https://xn--3s8h30f.ws"}],
+  keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator", "media downloader unleashed", "furry", "furries", "programmer", "software engineer"],
+  authors: [{name:"helloyanis"}],
 };
 
 export default async function RootLayout({
