@@ -9,6 +9,7 @@ import React from "react";
 import AnalyticsAlert from "../components/analyticsAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Theme from "@/components/theme";
+import PersonLd from "@/components/personLd";
 
 export const metadata: Metadata = {
   title: "🦊 helloyanis",
@@ -47,6 +48,7 @@ export default async function RootLayout({
     <html lang="en">
       <Theme>
         <body className="antialiased">
+          <PersonLd />
         <h1 className="hidden">helloyanis</h1>
         <link rel="alternate" hrefLang="fr" href="https://xn--3s8h30f.ws" />
         <link rel="alternate" hrefLang="en" href="https://xn--3s8h30f.ws" />
