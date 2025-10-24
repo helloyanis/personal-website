@@ -1,4 +1,5 @@
 "use client"
+import "@/app/i18n";
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/card';
 import { Button, Skeleton } from '@mui/material';
@@ -17,7 +18,7 @@ export default function Page() {
     
     useEffect(() => {
         if (i18n.isInitialized) {
-        setIsReady(true);
+            setIsReady(true);
         }
     }, [i18n.isInitialized]);
     return (

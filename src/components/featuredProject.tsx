@@ -17,10 +17,8 @@ const FeaturedProject: React.FC<ReposListProps> = ({ name, description, try_url,
   return (
     <Card>
         <h3 className="text-3xl text-center">{name}</h3>
-        {screenshot_url ? (
+        {screenshot_url && (
             <Image src={screenshot_url} alt={`${name} screenshot`} className="mx-auto my-4 max-h-64 object-contain" width={500} height={500}/>
-        ) : (
-            <Skeleton variant="rectangular" width={"100%"} height={256} className='my-4'/>
         )}
         {description && <p className="text-center">{description}</p>}
         <div className="flex justify-center space-x-4 mt-4">

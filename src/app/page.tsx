@@ -1,10 +1,12 @@
 "use client"
+import "@/app/i18n";
 import { Skeleton } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Card from '../components/card';
 import ReposList from '../components/reposList';
 import FeaturedProject from '@/components/featuredProject';
+
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [isReady, setIsReady] = useState(false);
@@ -26,10 +28,11 @@ export default function Home() {
         setItems(data.items);
       })
       .catch(error => console.error('Error:', error));
-  });
+  }, [isReady, items.length, url]); 
+
 
   return (
-    <div className="w-100 min-h-screen py-2">
+    <div className="min-h-screen py-2">
       <Card height={100}>
           <h1 className="text-4xl text-center font-bold">
             {t("welcomeText")}

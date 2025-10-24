@@ -13,5 +13,7 @@
     "popularRepositories": "Projets populaires",
     "seeMore": "Voir plus sur GitHub",
     "analyticsEnabled": "Des données anonymes sont collectées avec Google Analytics pour améliorer le site. Vous pouvez les désactiver en configurant le GPC (Global Privacy Control) ou la fonction Do Not Track dans les paramètres de votre navigateur.",
-    "analyticsDisabled": "Aucune donnée n'est collectée car vous avez activé le GPC (Global Privacy Control) ou la fonction Do Not Track dans les paramètres de votre navigateur."
+    "analyticsDisabled": "Aucune donnée n'est collectée car vous avez activé le GPC (Global Privacy Control) ou la fonction Do Not Track dans les paramètres de votre navigateur.",
+    "notFoundTitle": "Cette page n'existe pas!",
+    "notFoundDescription": "La page que vous vous attendiez à voir a peut-être été supprimée. Ou bien elle n'a jamais existé! Mais pas d'inquiétude, vous pouvez revenir en terrain connu avec la barre de navigation!"
 }

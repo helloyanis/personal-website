@@ -13,5 +13,7 @@
     "popularRepositories": "Popular repositories",
     "seeMore": "See more on GitHub",
     "analyticsEnabled": "Anonymous data is collected using Google Analytics to improve the site. You can disable it by configuring the GPC (Global Privacy Control) or Do Not Track in your browser settings.",
-    "analyticsDisabled": "No data is collected because you have enabled the GPC (Global Privacy Control) or Do Not track in your browser settings."
+    "analyticsDisabled": "No data is collected because you have enabled the GPC (Global Privacy Control) or Do Not track in your browser settings.",
+    "notFoundTitle": "This page does not exist!",
+    "notFoundDescription": "The page you expected to see may have been deleted. Or it never existed! But don't worry, you can get back to familiar ground with the navigation bar!"
 }
