@@ -5,15 +5,13 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function LuckTest({ luckAmount, open, setOpen }: { luckAmount: number, open: boolean, setOpen: (open: boolean) => void }) {
-    const { t, i18n } = useTranslation("funzone");
+    const { t, ready } = useTranslation("funzone");
     const [isReady, setIsReady] = useState(false);
-    
+
     useEffect(() => {
-        if (i18n.isInitialized) {
-          setIsReady(true);
-        }
-    }, [i18n.isInitialized]);
-    
+        setIsReady(ready);
+    }, [ready]);
+        
     return (
         <Dialog
             open={open}

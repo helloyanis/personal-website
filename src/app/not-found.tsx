@@ -1,17 +1,15 @@
 "use client"
-import "@/app/i18n";
 import { Skeleton } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
 export default function NotFound() {
-    const { t, i18n } = useTranslation();
+    const { t, ready } = useTranslation(); // use `ready`!
     const [isReady, setIsReady] = useState(false);
+
     useEffect(() => {
-        if (i18n.isInitialized) {
-        setIsReady(true);
-        }
-    }, [i18n.isInitialized]);
+        setIsReady(ready);
+    }, [ready]);
 
     return (
         <div className="min-h-screen flex flex-col justify-center items-center">

@@ -5,14 +5,12 @@ import { useEffect, useState } from 'react';
 import { FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/material';
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation("nav");
+  const { t, i18n, ready } = useTranslation("nav");
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    if (i18n.isInitialized) {
-      setIsReady(true);
-    }
-  }, [i18n.isInitialized]);
+    setIsReady(ready);
+  }, [ready]);
 
   return (
     <>

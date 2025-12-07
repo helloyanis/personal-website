@@ -10,15 +10,14 @@ type SnackbarAlertProps = {
 
 const AnalyticsAlert: React.FC<SnackbarAlertProps> = ({ shouldLoadAnalytics }) => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t, ready } = useTranslation();
 
   useEffect(() => {
-    if(i18n.isInitialized && localStorage.getItem('lastGPCValue') !== shouldLoadAnalytics.toString()) {
+    if(ready && localStorage.getItem('lastGPCValue') !== shouldLoadAnalytics.toString()) {
         setSnackbarOpen(true);
         localStorage.setItem('lastGPCValue', shouldLoadAnalytics.toString());
     }
-  }, [i18n.isInitialized, shouldLoadAnalytics]);
-
+  }, [ready, shouldLoadAnalytics]);
   const handleCloseSnackbar = () => {
     setSnackbarOpen(false);
   };
@@ -34,9 +33,9 @@ const AnalyticsAlert: React.FC<SnackbarAlertProps> = ({ shouldLoadAnalytics }) =
         severity="info"
         sx={{ width: '100%' }}
       >
-        {shouldLoadAnalytics
+        {ready && shouldLoadAnalytics
           ? t("analyticsEnabled")
-          : t("analyticsDisabled")}
+          : ready && t("analyticsDisabled")}
       </Alert>
     </Snackbar>
   );

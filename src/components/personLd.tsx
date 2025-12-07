@@ -1,5 +1,3 @@
-import React from "react";
-
 const personLd = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",

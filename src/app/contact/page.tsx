@@ -1,20 +1,21 @@
 "use client"
+import "@/app/i18n";
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/card';
-import { Button, Tooltip } from '@mui/material';
+import { Button, Tooltip, Skeleton } from '@mui/material';
 import { SiLemmy, SiMastodon, SiMatrix } from '@icons-pack/react-simple-icons';
 import { OutgoingMail } from '@mui/icons-material';
 
 export default function Page() {
-    const { t } = useTranslation("contact");
+    const { t, ready } = useTranslation("contact");
     return (
         <section className="grid grid-cols-1 gap-4 p-4">
             <Card height={200}>
                 <p className="text-2xl font-bold text-center">
-                    {t("contactTitle")}
+                    {!ready ? <Skeleton/> : t("contactTitle")}
                 </p>
                 <p className="text-center">
-                    {t("contactDescription1")}
+                    {!ready ? <Skeleton/> : t("contactDescription1")}
                 </p>
                 <div className="flex justify-around">
                 <Button 
@@ -50,10 +51,10 @@ export default function Page() {
                 </Button>
                 </div>
                 <p className="text-center">
-                    {t("contactDescription2")}
+                    {!ready ? <Skeleton/> : t("contactDescription2")}
                 </p>
                 <div className="flex justify-center">
-                    <Tooltip title={t("hintEncryption")}>
+                    <Tooltip title={!ready ? <Skeleton/> : t("hintEncryption")}>
                         <Button 
                             variant="contained" 
                             color="primary"

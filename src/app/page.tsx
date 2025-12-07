@@ -8,41 +8,43 @@ import ReposList from '../components/reposList';
 import FeaturedProject from '@/components/featuredProject';
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
-  const [isReady, setIsReady] = useState(false);
-
-  useEffect(() => {
-    if (i18n.isInitialized) {
-      setIsReady(true);
-    }
-  }, [i18n.isInitialized]);
+  const { t, ready } = useTranslation();
 
   const [url] = useState('https://api.github.com/search/repositories?q=user:helloyanis+fork:true&sort=stars&per_page=10&type=Repositories');
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    if (!isReady || items.length) return;
+    if (!ready || items.length) return;
     fetch(url)
       .then(response => response.json())
       .then(data => {
         setItems(data.items);
       })
       .catch(error => console.error('Error:', error));
-  }, [isReady, items.length, url]); 
+  }, [ready, items.length, url]); 
 
 
   return (
     <div className="min-h-screen py-2">
-      <Card height={100}>
-          <h1 className="text-4xl text-center font-bold">
-            {t("welcomeText")}
-          </h1>
-          <p className="text-lg text-center mt-4">
-            {t("welcomeDescription")}
-          </p>
+      <Card>
+          { ready ? (
+            <h1 className="text-4xl font-bold text-center">
+              {t("welcomeTitle")}
+            </h1>
+          ) : (
+            <Skeleton width={300} height={48} className="mx-auto"/>
+          )}
+          
+          { ready ? (
+            <p className="text-center mt-4">
+              {t("welcomeDescription")}
+            </p>
+          ) : (
+            <Skeleton width={400} height={24} className="mx-auto mt-4"/>
+          )}
       </Card>
       {
-        isReady ? (
+        ready ? (
           <h2 className="text-2xl font-bold mt-8">
             {t("featuredProjectsTitle")}
           </h2>
@@ -51,7 +53,7 @@ export default function Home() {
         )
       }
       {
-        isReady ? (
+        ready ? (
           <h2 className="text-xl text-center mt-8">
             {t("featuredProjectsDescription")}
           </h2>
@@ -60,23 +62,23 @@ export default function Home() {
         )
       }
       <FeaturedProject
-        name={t("featuredProject1")}
-        description={t("featuredProject1Desc")}
+        name={!ready? "" : t("featuredProject1")}
+        description={!ready? "" : t("featuredProject1Desc")}
         try_url='https://addons.mozilla.org/addon/media-downloader-unleashed?utm_source=personal-website'
         source_url='https://github.com/helloyanis/media-downloader-unleashed'
         screenshot_url='/assets/images/mdunleashed.png'
         />
         <FeaturedProject
-        name={t("featuredProject2")}
-        description={t("featuredProject2Desc")}
+        name={!ready? "" : t("featuredProject2")}
+        description={!ready? "" : t("featuredProject2Desc")}
         try_url='https://explorer.🦊💻.ws'
         source_url='https://github.com/helloyanis/js-explorer'
         screenshot_url='/assets/images/jsexplorer.png'
         />
       {
-        isReady ? (
+        ready ? (
           <h2 className="text-2xl font-bold mt-8">
-            {t("popularRepositories")}
+            {!ready? <Skeleton/> : t("popularRepositories")}
           </h2>
         ) : ( 
           <Skeleton width={200} height={40} />

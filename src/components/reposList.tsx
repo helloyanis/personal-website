@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Skeleton } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 interface Repo {
   id: number;
@@ -16,6 +17,8 @@ interface ReposListProps {
 }
 
 const ReposList: React.FC<ReposListProps> = ({ items }) => {
+    const { t, ready } = useTranslation();
+
   if (!items || items.length === 0) {
     return (
       <div className='flex flex-wrap justify-center'>
@@ -39,7 +42,7 @@ const ReposList: React.FC<ReposListProps> = ({ items }) => {
             <p className="repoCard__stars">⭐ {repo.stargazers_count}</p>
             <Button variant="contained" href={repo.html_url} target="_blank">
               <OpenInNewIcon className="mr-2" />
-              {t("viewOnGitHub")}
+              {!ready ? <Skeleton width={50}/> : t("viewOnGitHub")}
             </Button>
           </span>
         </div>

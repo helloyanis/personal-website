@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 import Navbar from "../components/navbar";
-import './i18n';
 import FairyDustCursor from "../components/fairydust-cursor";
 import Link from "next/link";
 import React from "react";
