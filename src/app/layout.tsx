@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   },
   keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator", "media downloader unleashed", "furry", "furries", "programmer", "software engineer"],
   authors: [{name:"helloyanis"}],
+  icons: {
+    icon: "/assets/images/profile.png",
+  },
 };
 
 export default async function RootLayout({
