@@ -13,6 +13,11 @@ export default function Home() {
 
   const [url] = useState('https://api.github.com/search/repositories?q=user:helloyanis+fork:true&sort=stars&per_page=10&type=Repositories');
   const [items, setItems] = useState([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!ready || items.length) return;
@@ -35,7 +40,7 @@ export default function Home() {
           height={150}
           className="rounded-full mx-auto mb-4"
         />
-          { ready ? (
+          { mounted && ready ? (
             <h1 className="text-4xl font-bold text-center">
               {t("welcomeTitle")}
             </h1>
@@ -43,7 +48,7 @@ export default function Home() {
             <Skeleton width={300} height={48} className="mx-auto"/>
           )}
           
-          { ready ? (
+          { mounted && ready ? (
             <p className="text-center mt-4">
               {t("welcomeDescription")}
             </p>
@@ -52,7 +57,7 @@ export default function Home() {
           )}
       </Card>
       {
-        ready ? (
+        mounted && ready ? (
           <h2 className="text-2xl font-bold mt-8">
             {t("featuredProjectsTitle")}
           </h2>
@@ -61,7 +66,7 @@ export default function Home() {
         )
       }
       {
-        ready ? (
+        mounted && ready ? (
           <h2 className="text-xl text-center mt-8">
             {t("featuredProjectsDescription")}
           </h2>
