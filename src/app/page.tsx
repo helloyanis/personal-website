@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Card from '../components/card';
 import ReposList from '../components/reposList';
 import FeaturedProject from '@/components/featuredProject';
+import Image from 'next/image';
 
 export default function Home() {
   const { t, ready } = useTranslation();
@@ -27,6 +28,13 @@ export default function Home() {
   return (
     <div className="min-h-screen py-2">
       <Card>
+        <Image
+          src="/assets/images/profile.png"
+          alt="Profile Picture"
+          width={150}
+          height={150}
+          className="rounded-full mx-auto mb-4"
+        />
           { ready ? (
             <h1 className="text-4xl font-bold text-center">
               {t("welcomeTitle")}
