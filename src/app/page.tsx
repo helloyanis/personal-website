@@ -39,7 +39,7 @@ export default function Home() {
           alt="Profile Picture"
           width={150}
           height={150}
-          className="rounded-full mx-auto mb-4"
+          className="mx-auto mb-4"
         />
         {mounted && ready ? (
           <h1 className="text-4xl font-bold text-center">
