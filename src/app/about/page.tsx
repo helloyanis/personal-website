@@ -87,7 +87,7 @@ export default function Page() {
                         <Link href="https://github.com/helloyanis" passHref rel="me" className="hover-effect">
                             <Shield src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff" alt="GitHub" />
                         </Link>
-                        <Shield src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=fff" alt="Windows" />
+                        <Shield src="https://img.shields.io/badge/Linux%20Mint-87CF3E?logo=Linux%20Mint&logoColor=white" alt="Linux Mint" />
                         <Shield src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff" alt="Android" />
                         <Link href="https://addons.mozilla.org/user/17521637/" passHref rel="me" className="hover-effect">
                             <Shield src="https://img.shields.io/badge/Firefox-FF7139?logo=firefox-browser&logoColor=fff" alt="Firefox" />
