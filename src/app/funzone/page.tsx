@@ -2,6 +2,7 @@
 import "@/app/i18n";
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/card';
+import Grid from '../../components/grid';
 import { Button, Skeleton } from '@mui/material';
 import { useState } from 'react';
 import LuckTest from '@/components/luckTest';
@@ -66,9 +67,9 @@ export default function Page() {
             {
                 ready ? (<p className="text-2xl font-bold text-center">{!ready ? <Skeleton/> : t("funLinks")}</p>) : (<Skeleton width={100} height={24} />)
             }
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-[repeat(auto-fill,minmax(320px,1fr))]">
+            <Grid itemW="320">
                 {fun_links.map((item, index)=>(
-                    <div className="card flex flex-col gap-2" key={index}>
+                    <Card className="flex flex-col gap-2" key={index}>
                         <p className="text-xl font-bold text-center">{item.title}</p>
                         <p className="text-center">{!ready ? <Skeleton/> : item.description}</p>
                         <div className="mt-auto flex flex-col">
@@ -82,15 +83,15 @@ export default function Page() {
                                 {!ready ? <Skeleton width={200}/> : t("goLink")}
                             </Button>
                         </div>
-                    </div>
+                    </Card>
                 ))}
-            </div>
+            </Grid>
             {
                 ready ? (<p className="text-2xl font-bold text-center">{!ready ? <Skeleton width={50}/> : t("friendLinks")}</p>) : (<Skeleton width={100} height={24} />)
             }
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-[repeat(auto-fill,minmax(320px,1fr))]">
+            <Grid itemW="320">
                 {other_people.map((item, index)=>(
-                    <div className="card flex justify-center" key={index}>
+                    <Card className="flex justify-center" key={index}>
                         <Button 
                             variant="contained" 
                             color="primary"
@@ -102,9 +103,9 @@ export default function Page() {
                         >
                             {item.title}
                         </Button>
-                    </div>
+                    </Card>
                 ))}
-            </div>
+            </Grid>
         </section>
     );
 }

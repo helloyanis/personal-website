@@ -15,7 +15,7 @@ interface ReposListProps {
 
 const FeaturedProject: React.FC<ReposListProps> = ({ name, description, try_url, source_url, screenshot_url }) => {   
   return (
-    <div className="card m-4">
+    <Card className="m-4">
         <h3 className="text-3xl text-center">{name}</h3>
         {screenshot_url && (
             <Image src={screenshot_url} alt={`${name} screenshot`} className="mx-auto my-4 max-h-64 object-contain" width={500} height={500}/>
@@ -29,8 +29,8 @@ const FeaturedProject: React.FC<ReposListProps> = ({ name, description, try_url,
                 {t("sourceCode")}
             </Button>
         </div>
-    </div>
-      )
+    </Card>
+    )
 };
 
 export default FeaturedProject;

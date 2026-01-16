@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <div className="card m-4">
+      <Card className="m-4">
         <Image
           src="/assets/images/profile.png"
           alt="Profile Picture"
@@ -56,7 +56,7 @@ export default function Home() {
         ) : (
           <Skeleton width={400} height={24} className="mx-auto mt-4" />
         )}
-      </div>
+      </Card>
 
       {mounted && ready ? (
         <h2 className="text-2xl font-bold mt-8 text-center">
@@ -97,7 +97,7 @@ export default function Home() {
         <Skeleton width={200} height={40} />
       )}
 
-      <div className='w-full' id="reposContainer">
+      <div className='w-full p-4' id="reposContainer">
         <ReposList items={items} />
       </div>
     </div>
