@@ -30,6 +30,7 @@ export default function Page() {
                 <Card>
                     <p className="text-xl font-bold text-center">{"The Useless Web"}</p>
                     <p className="text-center">{!ready ? <Skeleton/> : t("theUselessWebDescription")}</p>
+                    <div className="flex-grow" />
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -45,6 +46,7 @@ export default function Page() {
                 <Card>
                     <p className="text-xl font-bold text-center">{"Tusmo"}</p>
                     <p className="text-center">{!ready ? <Skeleton width={200}/> : t("tusmoDescription")}</p>
+                    <div className="flex-grow" />
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -60,6 +62,7 @@ export default function Page() {
                 <Card>
                     <p className="text-xl font-bold text-center">{"Suika Little Planets"}</p>
                     <p className="text-center">{!ready ? <Skeleton width={200}/> : t("suikaPlanetsDescription")}</p>
+                    <div className="flex-grow" />
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -75,6 +78,7 @@ export default function Page() {
                 <Card>
                     <p className="text-xl font-bold text-center">{"TETR.IO"}</p>
                     <p className="text-center">{!ready ? <Skeleton width={200}/> : t("tetrioDescription")}</p>
+                    <div className="flex-grow" />
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -93,7 +97,7 @@ export default function Page() {
             }
             <div className="flex flex-row justify-around flex-wrap">
             <Card>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -108,7 +112,7 @@ export default function Page() {
                 </div>
             </Card>
             <Card>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -123,7 +127,7 @@ export default function Page() {
                 </div>
             </Card>
             <Card>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                     <Button 
                         variant="contained" 
                         color="primary"
@@ -138,7 +142,7 @@ export default function Page() {
                 </div>
             </Card>
             <Card>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                     <Button 
                         variant="outlined" 
                         color="primary"

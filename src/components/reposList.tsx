@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Skeleton } from '@mui/material';
+import { Box, Button, Skeleton } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -38,8 +38,9 @@ const ReposList: React.FC<ReposListProps> = ({ items }) => {
         <div className="card flex-auto" key={repo.id}>
           <h3 className="text-3xl text-center">{repo.name}</h3>
           {repo.description && <p>{repo.description}</p>}
+          <div className="flex-grow" />
           <span className="flex justify-between items-center">
-            <p className="repoCard__stars">⭐ {repo.stargazers_count}</p>
+            <p className="w-3xs repoCard__stars">⭐ {repo.stargazers_count}</p>
             <Button variant="contained" href={repo.html_url} target="_blank">
               <OpenInNewIcon className="mr-2" />
               {!ready ? <Skeleton width={50}/> : t("viewOnGitHub")}
