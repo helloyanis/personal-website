@@ -33,18 +33,18 @@ const ReposList: React.FC<ReposListProps> = ({ items }) => {
     );
   }
   return (
-    <div className='flex flex-wrap justify-center'>
+    <div className='grid grid-cols-1 gap-4 p-4 md:grid-cols-[repeat(auto-fill,minmax(380px,1fr))]'>
       {items.map((repo) => (
-        <div className="card flex-auto" key={repo.id}>
+        <div className="card flex flex-col gap-4" key={repo.id}>
           <h3 className="text-3xl text-center">{repo.name}</h3>
           {repo.description && <p>{repo.description}</p>}
-          <span className="flex justify-between items-center">
+          <div className="flex justify-between items-center mt-auto">
             <p className="repoCard__stars">⭐ {repo.stargazers_count}</p>
             <Button variant="contained" href={repo.html_url} target="_blank">
               <OpenInNewIcon className="mr-2" />
               {!ready ? <Skeleton width={50}/> : t("viewOnGitHub")}
             </Button>
-          </span>
+          </div>
         </div>
       ))}
     </div>

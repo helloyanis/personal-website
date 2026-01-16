@@ -24,7 +24,7 @@ export default function Page() {
                 <p className="text-center">
                     {!ready ? <Skeleton height={100}/> : t("aboutSiteContent1")}
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-center p-4">
                     <Button
                         variant="outlined"
                         color="primary"

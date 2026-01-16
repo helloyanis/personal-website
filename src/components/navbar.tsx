@@ -1,12 +1,15 @@
 "use client"
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/material';
+import { FormControl, InputLabel, MenuItem, Select, Skeleton, Button } from '@mui/material';
 
 export default function Navbar() {
   const { t, i18n, ready } = useTranslation("nav");
   const [isReady, setIsReady] = useState(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href;
 
   useEffect(() => {
     setIsReady(ready);
@@ -15,43 +18,47 @@ export default function Navbar() {
   return (
     <>
     <nav className="p-4">
-      <div className="flex flex-wrap justify-between items-center">
-        <div className="flex space-x-4 text-center">
+      <div className="flex flex-wrap gap-4 justify-between items-center">
+        <div className="flex space-x-4 text-center whitespace-nowrap overflow-x-auto">
           <Link href="/" className="nav-link" shallow>
-            <div>
-              {isReady ? (
-                <span>{"🏠"}<br />{t("home")}</span>
-              ) : (
-                <Skeleton width={100} height={45} />
-              )}
-            </div>
+            {isReady ? (
+              <Button
+                variant={isActive("/") ? "contained" : "outlined"}
+                color="primary"
+              >
+                🏠<br/>{t("home")}
+              </Button>
+            ) : <Skeleton width={60} height={60} /> }
           </Link>
           <Link href="/about" className="nav-link" shallow>
-            <div>
-              {isReady ? (
-                <span>{"ℹ️"}<br />{t("about")}</span>
-              ) : (
-                <Skeleton width={100} height={45} />
-              )}
-            </div>
+            {isReady ? (
+              <Button 
+                variant={isActive("/about") ? "contained" : "outlined"}
+                color="primary"
+              >
+                ℹ️<br/>{t("about")}
+              </Button>
+            ) : <Skeleton width={60} height={60} /> }
           </Link>
           <Link href="/contact" className="nav-link" shallow>
-            <div>
-              {isReady ? (
-                <span>{"💬"}<br />{t("contact")}</span>
-              ) : (
-                <Skeleton width={100} height={45} />
-              )}
-            </div>
+            {isReady ? (
+              <Button 
+                variant={isActive("/contact") ? "contained" : "outlined"}
+                color="primary"
+              >
+                💬<br/>{t("contact")}
+              </Button>
+            ) : <Skeleton width={60} height={60} /> }
           </Link>
           <Link href="/funzone" className="nav-link" shallow>
-            <div>
-              {isReady ? (
-                <span>{"🕹️"}<br />{t("funzone")}</span>
-              ) : (
-                <Skeleton width={100} height={45} />
-              )}
-            </div>
+            {isReady ? (
+              <Button
+                variant={isActive("/funzone") ? "contained" : "outlined"}
+                color="primary"
+              >
+                🕹️<br/>{t("funzone")}
+              </Button>
+            ) : <Skeleton width={60} height={60} /> }
           </Link>
         </div>
         {isReady ? (

@@ -17,43 +17,43 @@ export default function Page() {
                 <p className="text-center">
                     {!ready ? <Skeleton/> : t("contactDescription1")}
                 </p>
-                <div className="flex justify-around">
-                <Button 
-                    variant="contained" 
-                    color="primary"
-                    className="m-2"
-                    href="https://furries.club/@helloyanis"
-                    startIcon={
-                        <SiMastodon/>
-                    }
-                >
-                    Mastodon
-                </Button>
-                <Button 
-                    variant="outlined" 
-                    color="primary"
-                    href="https://jlai.lu/u/helloyanis"
-                    startIcon={
-                        <SiLemmy/>
-                    }
-                >
-                    Lemmy
-                </Button>
-                <Button 
-                    variant="outlined" 
-                    color="primary"
-                    href="https://matrix.to/#/@helloyanis:matrix.org"
-                    startIcon={
-                        <SiMatrix/>
-                    }
-                >
-                    Matrix
-                </Button>
+                <div className="flex justify-around p-4">
+                    <Button 
+                        variant="contained" 
+                        color="primary"
+                        className="m-2"
+                        href="https://furries.club/@helloyanis"
+                        startIcon={
+                            <SiMastodon/>
+                        }
+                    >
+                        Mastodon
+                    </Button>
+                    <Button 
+                        variant="outlined" 
+                        color="primary"
+                        href="https://jlai.lu/u/helloyanis"
+                        startIcon={
+                            <SiLemmy/>
+                        }
+                    >
+                        Lemmy
+                    </Button>
+                    <Button 
+                        variant="outlined" 
+                        color="primary"
+                        href="https://matrix.to/#/@helloyanis:matrix.org"
+                        startIcon={
+                            <SiMatrix/>
+                        }
+                    >
+                        Matrix
+                    </Button>
                 </div>
                 <p className="text-center">
                     {!ready ? <Skeleton/> : t("contactDescription2")}
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-center p-4">
                     <Tooltip title={!ready ? <Skeleton/> : t("hintEncryption")}>
                         <Button 
                             variant="contained" 

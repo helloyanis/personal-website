@@ -32,8 +32,8 @@ export default function Home() {
   }, [mounted, ready, items.length, url]);
 
   return (
-    <div className="min-h-screen py-2">
-      <Card>
+    <div className="min-h-screen">
+      <div className="card m-4">
         <Image
           src="/assets/images/profile.png"
           alt="Profile Picture"
@@ -56,10 +56,10 @@ export default function Home() {
         ) : (
           <Skeleton width={400} height={24} className="mx-auto mt-4" />
         )}
-      </Card>
+      </div>
 
       {mounted && ready ? (
-        <h2 className="text-2xl font-bold mt-8">
+        <h2 className="text-2xl font-bold mt-8 text-center">
           {t("featuredProjectsTitle")}
         </h2>
       ) : (
@@ -90,7 +90,7 @@ export default function Home() {
       />
 
       {mounted && ready ? (
-        <h2 className="text-2xl font-bold mt-8">
+        <h2 className="text-2xl font-bold mt-8 text-center">
           {t("popularRepositories")}
         </h2>
       ) : (
