@@ -6,11 +6,6 @@ import { FormControl, InputLabel, MenuItem, Select, Skeleton } from '@mui/materi
 
 export default function Navbar() {
   const { t, i18n, ready } = useTranslation("nav");
-  const [isReady, setIsReady] = useState(false);
-
-  useEffect(() => {
-    setIsReady(ready);
-  }, [ready]);
 
   return (
     <>
@@ -19,7 +14,7 @@ export default function Navbar() {
         <div className="flex space-x-4 text-center">
           <Link href="/" className="nav-link" shallow>
             <div>
-              {isReady ? (
+              {ready ? (
                 <span>{"🏠"}<br />{t("home")}</span>
               ) : (
                 <Skeleton width={100} height={45} />
@@ -28,7 +23,7 @@ export default function Navbar() {
           </Link>
           <Link href="/about" className="nav-link" shallow>
             <div>
-              {isReady ? (
+              {ready ? (
                 <span>{"ℹ️"}<br />{t("about")}</span>
               ) : (
                 <Skeleton width={100} height={45} />
@@ -37,7 +32,7 @@ export default function Navbar() {
           </Link>
           <Link href="/contact" className="nav-link" shallow>
             <div>
-              {isReady ? (
+              {ready ? (
                 <span>{"💬"}<br />{t("contact")}</span>
               ) : (
                 <Skeleton width={100} height={45} />
@@ -46,7 +41,7 @@ export default function Navbar() {
           </Link>
           <Link href="/funzone" className="nav-link" shallow>
             <div>
-              {isReady ? (
+              {ready ? (
                 <span>{"🕹️"}<br />{t("funzone")}</span>
               ) : (
                 <Skeleton width={100} height={45} />
@@ -54,7 +49,7 @@ export default function Navbar() {
             </div>
           </Link>
         </div>
-        {isReady ? (
+        {ready ? (
           <FormControl variant="outlined" size="small" sx={{ minWidth: 120, marginTop: 1 }}>
             <InputLabel id="language">{t("language")}</InputLabel>
             <Select
