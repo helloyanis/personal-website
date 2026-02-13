@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "🦊 helloyanis",
     images: [
       {
-        url: "https://xn--3s8h30f.ws/assets/images/profile.png",
+        url: "https://xn--3s8h30f.ws/assets/images/profile.svg",
         width: 1248,
         height: 1248,
         alt: "helloyanis's profile image",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   keywords: ["helloyanis", "yanis", "web", "website", "developer", "portfolio", "rucoy calculator", "media downloader unleashed", "furry", "furries", "programmer", "software engineer"],
   authors: [{name:"helloyanis"}],
   icons: {
-    icon: "/assets/images/profile.png",
+    icon: "/assets/images/profile.svg",
   },
 };
 

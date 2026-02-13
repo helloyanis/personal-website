@@ -6,7 +6,7 @@ const personLd = {
     "@type": "Person",
     name: "🦊 helloyanis",
     description: "Software engineer and web developer creating cool projects!",
-    image: "https://xn--3s8h30f.ws/assets/images/profile.png",
+    image: "https://xn--3s8h30f.ws/assets/images/profile.svg",
     sameAs: [
       "https://github.com/helloyanis",
       "https://furries.club/@helloyanis",

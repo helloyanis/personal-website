@@ -35,7 +35,7 @@ export default function Home() {
     <div className="min-h-screen py-2">
       <Card>
         <Image
-          src="/assets/images/profile.png"
+          src="/assets/images/profile.svg"
           alt="Profile Picture"
           width={150}
           height={150}
