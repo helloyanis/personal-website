@@ -77,7 +77,7 @@ export default function Home() {
       <FeaturedProject
         name={mounted && ready ? t("featuredProject1") : ""}
         description={mounted && ready ? t("featuredProject1Desc") : ""}
-        try_url='https://github.com/helloyanis/media-downloader-unleashed/releases/download/v3.5.5/addon.xpi?utm_source=personal-website'
+        try_url='https://addons.mozilla.org/addon/media-downloader-unleashed?utm_source=personal-website'
         source_url='https://github.com/helloyanis/media-downloader-unleashed'
         screenshot_url='/assets/images/mdunleashed.png'
       />
