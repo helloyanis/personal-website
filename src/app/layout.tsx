@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "🦊 helloyanis",
     images: [
       {
-        url: "https://xn--3s8h30f.ws/assets/images/profile.svg",
+        url: "https://xn--3s8h30f.ws/assets/images/profile.png",
         width: 1248,
         height: 1248,
         alt: "helloyanis's profile image",
