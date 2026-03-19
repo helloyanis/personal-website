@@ -33,6 +33,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen py-2">
+      
       <Card>
         <Image
           src="/assets/images/profile.svg"
