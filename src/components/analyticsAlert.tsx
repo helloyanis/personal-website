@@ -1,4 +1,5 @@
 "use client";
+import "@/app/i18n"; // Ensure i18n is initialized
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Snackbar from '@mui/material/Snackbar';

@@ -1,4 +1,5 @@
 import React from 'react';
+import "@/app/i18n"; // Ensure i18n is initialized
 import { Box, Button, Skeleton } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { useTranslation } from 'react-i18next';

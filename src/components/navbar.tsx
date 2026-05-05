@@ -1,4 +1,5 @@
 "use client"
+import "@/app/i18n"; // Ensure i18n is initialized
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
