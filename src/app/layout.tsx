@@ -10,7 +10,6 @@ import AnalyticsAlert from "../components/analyticsAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Theme from "@/components/theme";
 import PersonLd from "@/components/personLd";
-import PlatinmodsRedirect from "@/components/platinmodsRedirect";
 
 
 export const metadata: Metadata = {
@@ -64,7 +63,6 @@ export default async function RootLayout({
         {children}
         <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
         {(shouldLoadAnalytics) && <GoogleAnalytics gaId="G-X4R5V1RGB2"/>}
-        <PlatinmodsRedirect open={true}/>
         </body>
       </Theme>
     </html>
