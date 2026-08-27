@@ -67,7 +67,7 @@ export default function Page() {
                         variant="contained" 
                         color="primary"
                         className="m-2"
-                        href="https://www.little-planets.xyz/"
+
                         startIcon={
                             <ArrowForward/>
                         }
